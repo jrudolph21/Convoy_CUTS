@@ -1,0 +1,5191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_240462c6b4e4605639b83c9f10cc9073 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_240462c6b4e4605639b83c9f10cc9073" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_240462c6b4e4605639b83c9f10cc9073 = L.map(
+                "map_240462c6b4e4605639b83c9f10cc9073",
+                {
+                    center: [39.9781147934473, 116.44985992165243],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4955ed3960969622ce431a781907b84e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4955ed3960969622ce431a781907b84e.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_7d92180bc77267bca9d2f70d628e7177 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_4f370572cc12e5454e08f6e94fb004a9 = L.polyline(
+                [[40.06816, 116.58234], [40.07657, 116.58139], [40.06167, 116.56425]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_7d92180bc77267bca9d2f70d628e7177);
+        
+    
+            poly_line_4f370572cc12e5454e08f6e94fb004a9.bindTooltip(
+                `<div>
+                     Convoy 1 | Taxi 110
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d542a0a8a4dc29379eec2f38dda8bea2 = L.circleMarker(
+                [40.06816, 116.58234],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7d92180bc77267bca9d2f70d628e7177);
+        
+    
+            circle_marker_d542a0a8a4dc29379eec2f38dda8bea2.bindTooltip(
+                `<div>
+                     Start: Taxi 110
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0dd844c3fbc11deca849e0879ac367ed = L.marker(
+                [40.06167, 116.56425],
+                {
+}
+            ).addTo(feature_group_7d92180bc77267bca9d2f70d628e7177);
+        
+    
+            var icon_1862fddc370bcdb6d3dd9e9a4ace94ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0dd844c3fbc11deca849e0879ac367ed.bindTooltip(
+                `<div>
+                     End: Taxi 110
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0dd844c3fbc11deca849e0879ac367ed.setIcon(icon_1862fddc370bcdb6d3dd9e9a4ace94ac);
+            
+    
+            var poly_line_61a85e3f255ac356af7ad88c9fc872e6 = L.polyline(
+                [[40.0669, 116.5825], [40.07649, 116.58048], [40.06161, 116.56432]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_7d92180bc77267bca9d2f70d628e7177);
+        
+    
+            poly_line_61a85e3f255ac356af7ad88c9fc872e6.bindTooltip(
+                `<div>
+                     Convoy 1 | Taxi 997
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5dc35cfb42fed3ae7a64057657bc43e = L.circleMarker(
+                [40.0669, 116.5825],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7d92180bc77267bca9d2f70d628e7177);
+        
+    
+            circle_marker_e5dc35cfb42fed3ae7a64057657bc43e.bindTooltip(
+                `<div>
+                     Start: Taxi 997
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1006c9f84014a114ed9dad374589013f = L.marker(
+                [40.06161, 116.56432],
+                {
+}
+            ).addTo(feature_group_7d92180bc77267bca9d2f70d628e7177);
+        
+    
+            var icon_ba1900749204f9e6dd9678facd3d3d7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1006c9f84014a114ed9dad374589013f.bindTooltip(
+                `<div>
+                     End: Taxi 997
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1006c9f84014a114ed9dad374589013f.setIcon(icon_ba1900749204f9e6dd9678facd3d3d7e);
+            
+    
+            var poly_line_e344afd46178eb1c1adf17a9e7e54bdd = L.polyline(
+                [[40.06888, 116.58228], [40.07606, 116.5803], [40.06196, 116.56418]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_7d92180bc77267bca9d2f70d628e7177);
+        
+    
+            poly_line_e344afd46178eb1c1adf17a9e7e54bdd.bindTooltip(
+                `<div>
+                     Convoy 1 | Taxi 6494
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2cf24269d7f72d062368f04197b044fa = L.circleMarker(
+                [40.06888, 116.58228],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_7d92180bc77267bca9d2f70d628e7177);
+        
+    
+            circle_marker_2cf24269d7f72d062368f04197b044fa.bindTooltip(
+                `<div>
+                     Start: Taxi 6494
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a6696480a10c0f2c494a08f239df63e6 = L.marker(
+                [40.06196, 116.56418],
+                {
+}
+            ).addTo(feature_group_7d92180bc77267bca9d2f70d628e7177);
+        
+    
+            var icon_2ab2c7b5e24e256a338c00c23030ea7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a6696480a10c0f2c494a08f239df63e6.bindTooltip(
+                `<div>
+                     End: Taxi 6494
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a6696480a10c0f2c494a08f239df63e6.setIcon(icon_2ab2c7b5e24e256a338c00c23030ea7f);
+            
+    
+            feature_group_7d92180bc77267bca9d2f70d628e7177.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_2b8c0e01e6f5bcf7e0ad17927d74c7b0 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_ca995f987b0fd83eaa62331abd1c084c = L.polyline(
+                [[40.07093, 116.56419], [40.06292, 116.57449], [40.06339, 116.58255]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_2b8c0e01e6f5bcf7e0ad17927d74c7b0);
+        
+    
+            poly_line_ca995f987b0fd83eaa62331abd1c084c.bindTooltip(
+                `<div>
+                     Convoy 2 | Taxi 5402
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e3a66e109c0ba94b1fb30af4793c3b7 = L.circleMarker(
+                [40.07093, 116.56419],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b8c0e01e6f5bcf7e0ad17927d74c7b0);
+        
+    
+            circle_marker_3e3a66e109c0ba94b1fb30af4793c3b7.bindTooltip(
+                `<div>
+                     Start: Taxi 5402
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_77b630f2088d3b87fd6afe56f7da55cd = L.marker(
+                [40.06339, 116.58255],
+                {
+}
+            ).addTo(feature_group_2b8c0e01e6f5bcf7e0ad17927d74c7b0);
+        
+    
+            var icon_1210ff7e3fff8c5c5a0a7f9e2c8cb023 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_77b630f2088d3b87fd6afe56f7da55cd.bindTooltip(
+                `<div>
+                     End: Taxi 5402
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_77b630f2088d3b87fd6afe56f7da55cd.setIcon(icon_1210ff7e3fff8c5c5a0a7f9e2c8cb023);
+            
+    
+            var poly_line_d8c186f33e0f0257879d4276764a970d = L.polyline(
+                [[40.0719, 116.56421], [40.06295, 116.57406], [40.06312, 116.58255]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_2b8c0e01e6f5bcf7e0ad17927d74c7b0);
+        
+    
+            poly_line_d8c186f33e0f0257879d4276764a970d.bindTooltip(
+                `<div>
+                     Convoy 2 | Taxi 5195
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_597c2a5e86d63eea3dd2b0596227dc79 = L.circleMarker(
+                [40.0719, 116.56421],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b8c0e01e6f5bcf7e0ad17927d74c7b0);
+        
+    
+            circle_marker_597c2a5e86d63eea3dd2b0596227dc79.bindTooltip(
+                `<div>
+                     Start: Taxi 5195
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1e6784012db82b70764683d71843e94b = L.marker(
+                [40.06312, 116.58255],
+                {
+}
+            ).addTo(feature_group_2b8c0e01e6f5bcf7e0ad17927d74c7b0);
+        
+    
+            var icon_43eb1a2bca61848c028cf5c98a153905 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1e6784012db82b70764683d71843e94b.bindTooltip(
+                `<div>
+                     End: Taxi 5195
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1e6784012db82b70764683d71843e94b.setIcon(icon_43eb1a2bca61848c028cf5c98a153905);
+            
+    
+            var poly_line_1e6b20703799747637607581321902c1 = L.polyline(
+                [[40.07081, 116.56418], [40.06284, 116.57563], [40.06421, 116.58244]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_2b8c0e01e6f5bcf7e0ad17927d74c7b0);
+        
+    
+            poly_line_1e6b20703799747637607581321902c1.bindTooltip(
+                `<div>
+                     Convoy 2 | Taxi 7639
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0833b1ebbd034cd19a1989a866291eb0 = L.circleMarker(
+                [40.07081, 116.56418],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b8c0e01e6f5bcf7e0ad17927d74c7b0);
+        
+    
+            circle_marker_0833b1ebbd034cd19a1989a866291eb0.bindTooltip(
+                `<div>
+                     Start: Taxi 7639
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8e2c3909324624186801bab04508a806 = L.marker(
+                [40.06421, 116.58244],
+                {
+}
+            ).addTo(feature_group_2b8c0e01e6f5bcf7e0ad17927d74c7b0);
+        
+    
+            var icon_9525c8523877dc968c65a5979fcc3c59 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8e2c3909324624186801bab04508a806.bindTooltip(
+                `<div>
+                     End: Taxi 7639
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8e2c3909324624186801bab04508a806.setIcon(icon_9525c8523877dc968c65a5979fcc3c59);
+            
+    
+            feature_group_2b8c0e01e6f5bcf7e0ad17927d74c7b0.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_535cdefc8e9ef5120598885ec5cb9643 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_c76ca4c87574ed7f99501ebb7e618c89 = L.polyline(
+                [[40.0635, 116.56876], [40.06086, 116.58279], [40.0699, 116.58154]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_535cdefc8e9ef5120598885ec5cb9643);
+        
+    
+            poly_line_c76ca4c87574ed7f99501ebb7e618c89.bindTooltip(
+                `<div>
+                     Convoy 3 | Taxi 3045
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c909f2876999807aaa67df3f8a498428 = L.circleMarker(
+                [40.0635, 116.56876],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_535cdefc8e9ef5120598885ec5cb9643);
+        
+    
+            circle_marker_c909f2876999807aaa67df3f8a498428.bindTooltip(
+                `<div>
+                     Start: Taxi 3045
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d3a6ab3ee9fcda10b80dfc4c9d123b9d = L.marker(
+                [40.0699, 116.58154],
+                {
+}
+            ).addTo(feature_group_535cdefc8e9ef5120598885ec5cb9643);
+        
+    
+            var icon_5acba4bde03d587182ee1a26f8668c12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d3a6ab3ee9fcda10b80dfc4c9d123b9d.bindTooltip(
+                `<div>
+                     End: Taxi 3045
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d3a6ab3ee9fcda10b80dfc4c9d123b9d.setIcon(icon_5acba4bde03d587182ee1a26f8668c12);
+            
+    
+            var poly_line_474d82d85482cc5caf4baecadb652ff8 = L.polyline(
+                [[40.06343, 116.56966], [40.06067, 116.58281], [40.07081, 116.5813]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_535cdefc8e9ef5120598885ec5cb9643);
+        
+    
+            poly_line_474d82d85482cc5caf4baecadb652ff8.bindTooltip(
+                `<div>
+                     Convoy 3 | Taxi 9453
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2501309e1d8b03c0ed8e2387e4088f66 = L.circleMarker(
+                [40.06343, 116.56966],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_535cdefc8e9ef5120598885ec5cb9643);
+        
+    
+            circle_marker_2501309e1d8b03c0ed8e2387e4088f66.bindTooltip(
+                `<div>
+                     Start: Taxi 9453
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6be0f6c3a7e89a2db78db023f6829744 = L.marker(
+                [40.07081, 116.5813],
+                {
+}
+            ).addTo(feature_group_535cdefc8e9ef5120598885ec5cb9643);
+        
+    
+            var icon_325a0042157d10bde5732387aea9a6c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6be0f6c3a7e89a2db78db023f6829744.bindTooltip(
+                `<div>
+                     End: Taxi 9453
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6be0f6c3a7e89a2db78db023f6829744.setIcon(icon_325a0042157d10bde5732387aea9a6c7);
+            
+    
+            var poly_line_c16063cc44101eb725e4f0cd5c066ffe = L.polyline(
+                [[40.06346, 116.56896], [40.06038, 116.58286], [40.07002, 116.58143]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_535cdefc8e9ef5120598885ec5cb9643);
+        
+    
+            poly_line_c16063cc44101eb725e4f0cd5c066ffe.bindTooltip(
+                `<div>
+                     Convoy 3 | Taxi 8884
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9aae48b56908cb404da638d985b7f7d6 = L.circleMarker(
+                [40.06346, 116.56896],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_535cdefc8e9ef5120598885ec5cb9643);
+        
+    
+            circle_marker_9aae48b56908cb404da638d985b7f7d6.bindTooltip(
+                `<div>
+                     Start: Taxi 8884
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3bc742eb04da48d0925bdf59cb985733 = L.marker(
+                [40.07002, 116.58143],
+                {
+}
+            ).addTo(feature_group_535cdefc8e9ef5120598885ec5cb9643);
+        
+    
+            var icon_e544e8b730cbab83bc1e4e5f2d59a043 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3bc742eb04da48d0925bdf59cb985733.bindTooltip(
+                `<div>
+                     End: Taxi 8884
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3bc742eb04da48d0925bdf59cb985733.setIcon(icon_e544e8b730cbab83bc1e4e5f2d59a043);
+            
+    
+            var poly_line_d2b1b45d32692756a7c1fee622dd9858 = L.polyline(
+                [[40.06341, 116.56929], [40.06276, 116.58264], [40.07173, 116.58113]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_535cdefc8e9ef5120598885ec5cb9643);
+        
+    
+            poly_line_d2b1b45d32692756a7c1fee622dd9858.bindTooltip(
+                `<div>
+                     Convoy 3 | Taxi 3932
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_609e89be4cd21973a9d5a897f52d5d2f = L.circleMarker(
+                [40.06341, 116.56929],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_535cdefc8e9ef5120598885ec5cb9643);
+        
+    
+            circle_marker_609e89be4cd21973a9d5a897f52d5d2f.bindTooltip(
+                `<div>
+                     Start: Taxi 3932
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f61dd68ad37ba6a067f38b2925976dbb = L.marker(
+                [40.07173, 116.58113],
+                {
+}
+            ).addTo(feature_group_535cdefc8e9ef5120598885ec5cb9643);
+        
+    
+            var icon_e596886d6253efca29e57e067f1f13cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f61dd68ad37ba6a067f38b2925976dbb.bindTooltip(
+                `<div>
+                     End: Taxi 3932
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f61dd68ad37ba6a067f38b2925976dbb.setIcon(icon_e596886d6253efca29e57e067f1f13cd);
+            
+    
+            var poly_line_a29a473c0d04277feda88be5a9132e1f = L.polyline(
+                [[40.06352, 116.56946], [40.06224, 116.58188], [40.07069, 116.58143]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_535cdefc8e9ef5120598885ec5cb9643);
+        
+    
+            poly_line_a29a473c0d04277feda88be5a9132e1f.bindTooltip(
+                `<div>
+                     Convoy 3 | Taxi 9503
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_09a60707e6e41bc5bb040470e48928d9 = L.circleMarker(
+                [40.06352, 116.56946],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_535cdefc8e9ef5120598885ec5cb9643);
+        
+    
+            circle_marker_09a60707e6e41bc5bb040470e48928d9.bindTooltip(
+                `<div>
+                     Start: Taxi 9503
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b22e97e532d05540bacf784d8b0fc9cb = L.marker(
+                [40.07069, 116.58143],
+                {
+}
+            ).addTo(feature_group_535cdefc8e9ef5120598885ec5cb9643);
+        
+    
+            var icon_96648734906c7943467239f40c53f9c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b22e97e532d05540bacf784d8b0fc9cb.bindTooltip(
+                `<div>
+                     End: Taxi 9503
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b22e97e532d05540bacf784d8b0fc9cb.setIcon(icon_96648734906c7943467239f40c53f9c8);
+            
+    
+            feature_group_535cdefc8e9ef5120598885ec5cb9643.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_30000a46fff1fb8ff9e6cdeb2db8d46b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_4ff7520302ec1333eae2e07424c67a55 = L.polyline(
+                [[40.0462, 116.57866], [40.05792, 116.58397], [40.0779, 116.58679]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_30000a46fff1fb8ff9e6cdeb2db8d46b);
+        
+    
+            poly_line_4ff7520302ec1333eae2e07424c67a55.bindTooltip(
+                `<div>
+                     Convoy 4 | Taxi 6954
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_59e727d570b6b1ca593fb72ac5bd907c = L.circleMarker(
+                [40.0462, 116.57866],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_30000a46fff1fb8ff9e6cdeb2db8d46b);
+        
+    
+            circle_marker_59e727d570b6b1ca593fb72ac5bd907c.bindTooltip(
+                `<div>
+                     Start: Taxi 6954
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a72ff3163706ada4c2e1d49b0abbdf76 = L.marker(
+                [40.0779, 116.58679],
+                {
+}
+            ).addTo(feature_group_30000a46fff1fb8ff9e6cdeb2db8d46b);
+        
+    
+            var icon_84c24aa7f9867c864772934913c8fb28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a72ff3163706ada4c2e1d49b0abbdf76.bindTooltip(
+                `<div>
+                     End: Taxi 6954
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a72ff3163706ada4c2e1d49b0abbdf76.setIcon(icon_84c24aa7f9867c864772934913c8fb28);
+            
+    
+            var poly_line_2e8df43cceac0d29044b765cebc7d597 = L.polyline(
+                [[40.04661, 116.57885], [40.05591, 116.58419], [40.07736, 116.58662]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_30000a46fff1fb8ff9e6cdeb2db8d46b);
+        
+    
+            poly_line_2e8df43cceac0d29044b765cebc7d597.bindTooltip(
+                `<div>
+                     Convoy 4 | Taxi 605
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aeef3d9b8009b07854621bcca099d60b = L.circleMarker(
+                [40.04661, 116.57885],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_30000a46fff1fb8ff9e6cdeb2db8d46b);
+        
+    
+            circle_marker_aeef3d9b8009b07854621bcca099d60b.bindTooltip(
+                `<div>
+                     Start: Taxi 605
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_55b77410e5c4dfedc39a3c6f22065af4 = L.marker(
+                [40.07736, 116.58662],
+                {
+}
+            ).addTo(feature_group_30000a46fff1fb8ff9e6cdeb2db8d46b);
+        
+    
+            var icon_f5a0d0b09af8847a630fb9fbe8ec5079 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_55b77410e5c4dfedc39a3c6f22065af4.bindTooltip(
+                `<div>
+                     End: Taxi 605
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_55b77410e5c4dfedc39a3c6f22065af4.setIcon(icon_f5a0d0b09af8847a630fb9fbe8ec5079);
+            
+    
+            var poly_line_1e4dbb514473dd3c683f7e3fcd0b5581 = L.polyline(
+                [[40.0464, 116.5787], [40.05732, 116.58401], [40.07829, 116.58658]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_30000a46fff1fb8ff9e6cdeb2db8d46b);
+        
+    
+            poly_line_1e4dbb514473dd3c683f7e3fcd0b5581.bindTooltip(
+                `<div>
+                     Convoy 4 | Taxi 9493
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8d59509baeee3ad26f7c78952a4e41de = L.circleMarker(
+                [40.0464, 116.5787],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_30000a46fff1fb8ff9e6cdeb2db8d46b);
+        
+    
+            circle_marker_8d59509baeee3ad26f7c78952a4e41de.bindTooltip(
+                `<div>
+                     Start: Taxi 9493
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bc6f7f5a8d2b70ff95bf9d3dee400721 = L.marker(
+                [40.07829, 116.58658],
+                {
+}
+            ).addTo(feature_group_30000a46fff1fb8ff9e6cdeb2db8d46b);
+        
+    
+            var icon_38a3cf1df1e8620753532909c74f9836 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_bc6f7f5a8d2b70ff95bf9d3dee400721.bindTooltip(
+                `<div>
+                     End: Taxi 9493
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bc6f7f5a8d2b70ff95bf9d3dee400721.setIcon(icon_38a3cf1df1e8620753532909c74f9836);
+            
+    
+            var poly_line_1eda9440efc5a65c08e6e68108fff01e = L.polyline(
+                [[40.04627, 116.57854], [40.05763, 116.58409], [40.07848, 116.58671]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_30000a46fff1fb8ff9e6cdeb2db8d46b);
+        
+    
+            poly_line_1eda9440efc5a65c08e6e68108fff01e.bindTooltip(
+                `<div>
+                     Convoy 4 | Taxi 623
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_14b205569d3d7c2756cdf93437e08cf2 = L.circleMarker(
+                [40.04627, 116.57854],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_30000a46fff1fb8ff9e6cdeb2db8d46b);
+        
+    
+            circle_marker_14b205569d3d7c2756cdf93437e08cf2.bindTooltip(
+                `<div>
+                     Start: Taxi 623
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_75bd6be13cd6eb5b10a752d80f6955d9 = L.marker(
+                [40.07848, 116.58671],
+                {
+}
+            ).addTo(feature_group_30000a46fff1fb8ff9e6cdeb2db8d46b);
+        
+    
+            var icon_383a7009d053631095f35c370dff8e68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_75bd6be13cd6eb5b10a752d80f6955d9.bindTooltip(
+                `<div>
+                     End: Taxi 623
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75bd6be13cd6eb5b10a752d80f6955d9.setIcon(icon_383a7009d053631095f35c370dff8e68);
+            
+    
+            feature_group_30000a46fff1fb8ff9e6cdeb2db8d46b.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_02d5f7686d90f0f877c55bb2ce6aa9aa = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_316b91f17f1c725fb6bd0d93e52deb68 = L.polyline(
+                [[40.05166, 116.58368], [40.06608, 116.58267], [40.07646, 116.58032]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_02d5f7686d90f0f877c55bb2ce6aa9aa);
+        
+    
+            poly_line_316b91f17f1c725fb6bd0d93e52deb68.bindTooltip(
+                `<div>
+                     Convoy 5 | Taxi 7049
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c4e146e931a78f62d4557934e01db0ae = L.circleMarker(
+                [40.05166, 116.58368],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_02d5f7686d90f0f877c55bb2ce6aa9aa);
+        
+    
+            circle_marker_c4e146e931a78f62d4557934e01db0ae.bindTooltip(
+                `<div>
+                     Start: Taxi 7049
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6396b45d157b8e7177e61f656d577a9f = L.marker(
+                [40.07646, 116.58032],
+                {
+}
+            ).addTo(feature_group_02d5f7686d90f0f877c55bb2ce6aa9aa);
+        
+    
+            var icon_d05deb0e4ed0aab9b36df0566b28abe9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6396b45d157b8e7177e61f656d577a9f.bindTooltip(
+                `<div>
+                     End: Taxi 7049
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6396b45d157b8e7177e61f656d577a9f.setIcon(icon_d05deb0e4ed0aab9b36df0566b28abe9);
+            
+    
+            var poly_line_70512404e0178a3a842550273bdf7f47 = L.polyline(
+                [[40.05062, 116.58305], [40.06496, 116.58278], [40.07476, 116.58209]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_02d5f7686d90f0f877c55bb2ce6aa9aa);
+        
+    
+            poly_line_70512404e0178a3a842550273bdf7f47.bindTooltip(
+                `<div>
+                     Convoy 5 | Taxi 7097
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a290a8a1f3f21135499fb07bdb2673f2 = L.circleMarker(
+                [40.05062, 116.58305],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_02d5f7686d90f0f877c55bb2ce6aa9aa);
+        
+    
+            circle_marker_a290a8a1f3f21135499fb07bdb2673f2.bindTooltip(
+                `<div>
+                     Start: Taxi 7097
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_005046f6bda2f650f0c13e855b85e29d = L.marker(
+                [40.07476, 116.58209],
+                {
+}
+            ).addTo(feature_group_02d5f7686d90f0f877c55bb2ce6aa9aa);
+        
+    
+            var icon_e453ab386aec035dc41517fccbfa90a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_005046f6bda2f650f0c13e855b85e29d.bindTooltip(
+                `<div>
+                     End: Taxi 7097
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_005046f6bda2f650f0c13e855b85e29d.setIcon(icon_e453ab386aec035dc41517fccbfa90a5);
+            
+    
+            var poly_line_71bacb597e97fe3d6c289283fe8480c0 = L.polyline(
+                [[40.04879, 116.58147], [40.06525, 116.58271], [40.07672, 116.58104]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_02d5f7686d90f0f877c55bb2ce6aa9aa);
+        
+    
+            poly_line_71bacb597e97fe3d6c289283fe8480c0.bindTooltip(
+                `<div>
+                     Convoy 5 | Taxi 7716
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2db69651c08394dc1dfcafc042c1576c = L.circleMarker(
+                [40.04879, 116.58147],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_02d5f7686d90f0f877c55bb2ce6aa9aa);
+        
+    
+            circle_marker_2db69651c08394dc1dfcafc042c1576c.bindTooltip(
+                `<div>
+                     Start: Taxi 7716
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2d1e9442df4a03ff0b7ebf9816cd4b67 = L.marker(
+                [40.07672, 116.58104],
+                {
+}
+            ).addTo(feature_group_02d5f7686d90f0f877c55bb2ce6aa9aa);
+        
+    
+            var icon_d561a2e5108a877795bd9eba0bb9386c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_2d1e9442df4a03ff0b7ebf9816cd4b67.bindTooltip(
+                `<div>
+                     End: Taxi 7716
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2d1e9442df4a03ff0b7ebf9816cd4b67.setIcon(icon_d561a2e5108a877795bd9eba0bb9386c);
+            
+    
+            var poly_line_582c4e33f160623f512eb8734f5c16e0 = L.polyline(
+                [[40.05, 116.5827], [40.0644, 116.58297], [40.07649, 116.58101]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_02d5f7686d90f0f877c55bb2ce6aa9aa);
+        
+    
+            poly_line_582c4e33f160623f512eb8734f5c16e0.bindTooltip(
+                `<div>
+                     Convoy 5 | Taxi 2548
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8a02f130183c603aec0e135084d5d2de = L.circleMarker(
+                [40.05, 116.5827],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_02d5f7686d90f0f877c55bb2ce6aa9aa);
+        
+    
+            circle_marker_8a02f130183c603aec0e135084d5d2de.bindTooltip(
+                `<div>
+                     Start: Taxi 2548
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_113fae9f2c8fcbe15147bfe81dc16fff = L.marker(
+                [40.07649, 116.58101],
+                {
+}
+            ).addTo(feature_group_02d5f7686d90f0f877c55bb2ce6aa9aa);
+        
+    
+            var icon_6f48e2a701b0793eed498b4ce86358a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_113fae9f2c8fcbe15147bfe81dc16fff.bindTooltip(
+                `<div>
+                     End: Taxi 2548
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_113fae9f2c8fcbe15147bfe81dc16fff.setIcon(icon_6f48e2a701b0793eed498b4ce86358a4);
+            
+    
+            feature_group_02d5f7686d90f0f877c55bb2ce6aa9aa.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_cd258f3d4a7c23c798ef33b576a2f4da = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_8a8609c714ea7f29320c25c40a2aa3be = L.polyline(
+                [[40.04794, 116.58046], [40.07452, 116.58235], [40.07692, 116.58155]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_cd258f3d4a7c23c798ef33b576a2f4da);
+        
+    
+            poly_line_8a8609c714ea7f29320c25c40a2aa3be.bindTooltip(
+                `<div>
+                     Convoy 6 | Taxi 205
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2e5cbb054fd20861d2b8ef9df83eb76a = L.circleMarker(
+                [40.04794, 116.58046],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_cd258f3d4a7c23c798ef33b576a2f4da);
+        
+    
+            circle_marker_2e5cbb054fd20861d2b8ef9df83eb76a.bindTooltip(
+                `<div>
+                     Start: Taxi 205
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e93e91ae636477766287768c049c6222 = L.marker(
+                [40.07692, 116.58155],
+                {
+}
+            ).addTo(feature_group_cd258f3d4a7c23c798ef33b576a2f4da);
+        
+    
+            var icon_feba169d84cb472adb015737effeca22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_e93e91ae636477766287768c049c6222.bindTooltip(
+                `<div>
+                     End: Taxi 205
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e93e91ae636477766287768c049c6222.setIcon(icon_feba169d84cb472adb015737effeca22);
+            
+    
+            var poly_line_17cfc498b2dd125e734a98068f861384 = L.polyline(
+                [[40.05003, 116.58263], [40.07685, 116.58548], [40.07994, 116.58532]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_cd258f3d4a7c23c798ef33b576a2f4da);
+        
+    
+            poly_line_17cfc498b2dd125e734a98068f861384.bindTooltip(
+                `<div>
+                     Convoy 6 | Taxi 5844
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_26e9b6a0c5b048e9c0b8a5b17fdd3626 = L.circleMarker(
+                [40.05003, 116.58263],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_cd258f3d4a7c23c798ef33b576a2f4da);
+        
+    
+            circle_marker_26e9b6a0c5b048e9c0b8a5b17fdd3626.bindTooltip(
+                `<div>
+                     Start: Taxi 5844
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_48e974c5b0cc96129047edff80f5b193 = L.marker(
+                [40.07994, 116.58532],
+                {
+}
+            ).addTo(feature_group_cd258f3d4a7c23c798ef33b576a2f4da);
+        
+    
+            var icon_8eeae7ec696f6b1435497e72499c5320 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_48e974c5b0cc96129047edff80f5b193.bindTooltip(
+                `<div>
+                     End: Taxi 5844
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_48e974c5b0cc96129047edff80f5b193.setIcon(icon_8eeae7ec696f6b1435497e72499c5320);
+            
+    
+            var poly_line_0bd099ba614ce0cab1d87f15a8dfebe0 = L.polyline(
+                [[40.0467, 116.57936], [40.07454, 116.58231], [40.07751, 116.58109]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_cd258f3d4a7c23c798ef33b576a2f4da);
+        
+    
+            poly_line_0bd099ba614ce0cab1d87f15a8dfebe0.bindTooltip(
+                `<div>
+                     Convoy 6 | Taxi 5325
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2f8bc24d26cd61acf1d691c2c904fb5 = L.circleMarker(
+                [40.0467, 116.57936],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_cd258f3d4a7c23c798ef33b576a2f4da);
+        
+    
+            circle_marker_c2f8bc24d26cd61acf1d691c2c904fb5.bindTooltip(
+                `<div>
+                     Start: Taxi 5325
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_848b6fdcf62a40d2abaaf56ac60b7869 = L.marker(
+                [40.07751, 116.58109],
+                {
+}
+            ).addTo(feature_group_cd258f3d4a7c23c798ef33b576a2f4da);
+        
+    
+            var icon_4ce582cd5f3ef2c56d4526a2e25a5062 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_848b6fdcf62a40d2abaaf56ac60b7869.bindTooltip(
+                `<div>
+                     End: Taxi 5325
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_848b6fdcf62a40d2abaaf56ac60b7869.setIcon(icon_4ce582cd5f3ef2c56d4526a2e25a5062);
+            
+    
+            var poly_line_87c9daa01bccbf6ab7ec0b702141e7dd = L.polyline(
+                [[40.04938, 116.58195], [40.07457, 116.58244], [40.07732, 116.58136]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_cd258f3d4a7c23c798ef33b576a2f4da);
+        
+    
+            poly_line_87c9daa01bccbf6ab7ec0b702141e7dd.bindTooltip(
+                `<div>
+                     Convoy 6 | Taxi 3846
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1dc8f26a2faafc080303938e7da0059 = L.circleMarker(
+                [40.04938, 116.58195],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_cd258f3d4a7c23c798ef33b576a2f4da);
+        
+    
+            circle_marker_f1dc8f26a2faafc080303938e7da0059.bindTooltip(
+                `<div>
+                     Start: Taxi 3846
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_aa1b651f47d5dc64c7766045251b77ec = L.marker(
+                [40.07732, 116.58136],
+                {
+}
+            ).addTo(feature_group_cd258f3d4a7c23c798ef33b576a2f4da);
+        
+    
+            var icon_c26512c6d37988d88d6b7fb43bd00ddf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_aa1b651f47d5dc64c7766045251b77ec.bindTooltip(
+                `<div>
+                     End: Taxi 3846
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_aa1b651f47d5dc64c7766045251b77ec.setIcon(icon_c26512c6d37988d88d6b7fb43bd00ddf);
+            
+    
+            feature_group_cd258f3d4a7c23c798ef33b576a2f4da.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_e18e0078ee34b0869ff10331323d4894 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_40793f477d7a36e9f476b055970ad17a = L.polyline(
+                [[40.06344, 116.58252], [40.06651, 116.58202], [40.06919, 116.5816]],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_e18e0078ee34b0869ff10331323d4894);
+        
+    
+            poly_line_40793f477d7a36e9f476b055970ad17a.bindTooltip(
+                `<div>
+                     Convoy 7 | Taxi 2017
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f4d9e06ebbc50bc6c87a00f1806c969 = L.circleMarker(
+                [40.06344, 116.58252],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e18e0078ee34b0869ff10331323d4894);
+        
+    
+            circle_marker_3f4d9e06ebbc50bc6c87a00f1806c969.bindTooltip(
+                `<div>
+                     Start: Taxi 2017
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9702ca7994a559da993b4dd6338b26ce = L.marker(
+                [40.06919, 116.5816],
+                {
+}
+            ).addTo(feature_group_e18e0078ee34b0869ff10331323d4894);
+        
+    
+            var icon_ebb74d1a6b859d372e7b5d8493681cc4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9702ca7994a559da993b4dd6338b26ce.bindTooltip(
+                `<div>
+                     End: Taxi 2017
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9702ca7994a559da993b4dd6338b26ce.setIcon(icon_ebb74d1a6b859d372e7b5d8493681cc4);
+            
+    
+            var poly_line_dab5bdd994cced2422705eedb4408511 = L.polyline(
+                [[40.06351, 116.58245], [40.06764, 116.58181], [40.0693, 116.58155]],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_e18e0078ee34b0869ff10331323d4894);
+        
+    
+            poly_line_dab5bdd994cced2422705eedb4408511.bindTooltip(
+                `<div>
+                     Convoy 7 | Taxi 2427
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a8bfd372b79ec98cbd0f3cba971ef54 = L.circleMarker(
+                [40.06351, 116.58245],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e18e0078ee34b0869ff10331323d4894);
+        
+    
+            circle_marker_2a8bfd372b79ec98cbd0f3cba971ef54.bindTooltip(
+                `<div>
+                     Start: Taxi 2427
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_24d6e40102d1d5a984ac43c04d7ad37f = L.marker(
+                [40.0693, 116.58155],
+                {
+}
+            ).addTo(feature_group_e18e0078ee34b0869ff10331323d4894);
+        
+    
+            var icon_b408fc6fc839a8158abb8dec1de94cd0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_24d6e40102d1d5a984ac43c04d7ad37f.bindTooltip(
+                `<div>
+                     End: Taxi 2427
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_24d6e40102d1d5a984ac43c04d7ad37f.setIcon(icon_b408fc6fc839a8158abb8dec1de94cd0);
+            
+    
+            var poly_line_a0b9b68736cf45e98cfa3a6209d63a32 = L.polyline(
+                [[40.06023, 116.58302], [40.06636, 116.58204], [40.06903, 116.58161]],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_e18e0078ee34b0869ff10331323d4894);
+        
+    
+            poly_line_a0b9b68736cf45e98cfa3a6209d63a32.bindTooltip(
+                `<div>
+                     Convoy 7 | Taxi 9947
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f88ed64603b478af89993ca76bfaf3a = L.circleMarker(
+                [40.06023, 116.58302],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e18e0078ee34b0869ff10331323d4894);
+        
+    
+            circle_marker_2f88ed64603b478af89993ca76bfaf3a.bindTooltip(
+                `<div>
+                     Start: Taxi 9947
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_11798aace71d23788744f02c8262a483 = L.marker(
+                [40.06903, 116.58161],
+                {
+}
+            ).addTo(feature_group_e18e0078ee34b0869ff10331323d4894);
+        
+    
+            var icon_49d6c3624337137590197c41ecc35be5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_11798aace71d23788744f02c8262a483.bindTooltip(
+                `<div>
+                     End: Taxi 9947
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_11798aace71d23788744f02c8262a483.setIcon(icon_49d6c3624337137590197c41ecc35be5);
+            
+    
+            var poly_line_d55d96ee9df89c1444a58affcb381ccd = L.polyline(
+                [[40.06255, 116.58265], [40.06672, 116.58193], [40.06835, 116.58173]],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_e18e0078ee34b0869ff10331323d4894);
+        
+    
+            poly_line_d55d96ee9df89c1444a58affcb381ccd.bindTooltip(
+                `<div>
+                     Convoy 7 | Taxi 10079
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5bb2d1caecec5088e503148a4b26bc56 = L.circleMarker(
+                [40.06255, 116.58265],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e18e0078ee34b0869ff10331323d4894);
+        
+    
+            circle_marker_5bb2d1caecec5088e503148a4b26bc56.bindTooltip(
+                `<div>
+                     Start: Taxi 10079
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cdd4d3193fadbf0f0f46ec100f1817a2 = L.marker(
+                [40.06835, 116.58173],
+                {
+}
+            ).addTo(feature_group_e18e0078ee34b0869ff10331323d4894);
+        
+    
+            var icon_1bd39b6af03968a37caa7e4ce02cca71 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_cdd4d3193fadbf0f0f46ec100f1817a2.bindTooltip(
+                `<div>
+                     End: Taxi 10079
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cdd4d3193fadbf0f0f46ec100f1817a2.setIcon(icon_1bd39b6af03968a37caa7e4ce02cca71);
+            
+    
+            feature_group_e18e0078ee34b0869ff10331323d4894.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_342517d5a6e5d43b73d6f4f875ff77af = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_0bca04e4375a7177e8e44e7d4b0b2965 = L.polyline(
+                [[40.06133, 116.58273], [40.06203, 116.58275], [40.06607, 116.58207], [40.07748, 116.5877]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_342517d5a6e5d43b73d6f4f875ff77af);
+        
+    
+            poly_line_0bca04e4375a7177e8e44e7d4b0b2965.bindTooltip(
+                `<div>
+                     Convoy 8 | Taxi 8432
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c7891f4784c38ea178538bcf6119284 = L.circleMarker(
+                [40.06133, 116.58273],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_342517d5a6e5d43b73d6f4f875ff77af);
+        
+    
+            circle_marker_1c7891f4784c38ea178538bcf6119284.bindTooltip(
+                `<div>
+                     Start: Taxi 8432
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ff433207a4f4c1664206507f1cadf6af = L.marker(
+                [40.07748, 116.5877],
+                {
+}
+            ).addTo(feature_group_342517d5a6e5d43b73d6f4f875ff77af);
+        
+    
+            var icon_ddba76e3459109939c78c03f89a28ec5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ff433207a4f4c1664206507f1cadf6af.bindTooltip(
+                `<div>
+                     End: Taxi 8432
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ff433207a4f4c1664206507f1cadf6af.setIcon(icon_ddba76e3459109939c78c03f89a28ec5);
+            
+    
+            var poly_line_c4e6051a303ae00ecf0b44eeab983e96 = L.polyline(
+                [[40.06249, 116.58266], [40.06249, 116.58266], [40.06826, 116.58173], [40.07852, 116.58702]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_342517d5a6e5d43b73d6f4f875ff77af);
+        
+    
+            poly_line_c4e6051a303ae00ecf0b44eeab983e96.bindTooltip(
+                `<div>
+                     Convoy 8 | Taxi 2545
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d6d54a4ed94b08926250b01a6c594821 = L.circleMarker(
+                [40.06249, 116.58266],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_342517d5a6e5d43b73d6f4f875ff77af);
+        
+    
+            circle_marker_d6d54a4ed94b08926250b01a6c594821.bindTooltip(
+                `<div>
+                     Start: Taxi 2545
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ce919b3eb6dfd15ac67a6102dcbd8191 = L.marker(
+                [40.07852, 116.58702],
+                {
+}
+            ).addTo(feature_group_342517d5a6e5d43b73d6f4f875ff77af);
+        
+    
+            var icon_51d1178b59f33c952f1d1b8e5e3c4f7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ce919b3eb6dfd15ac67a6102dcbd8191.bindTooltip(
+                `<div>
+                     End: Taxi 2545
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ce919b3eb6dfd15ac67a6102dcbd8191.setIcon(icon_51d1178b59f33c952f1d1b8e5e3c4f7f);
+            
+    
+            var poly_line_b896680249ad78a513ddead60152d1a9 = L.polyline(
+                [[40.06031, 116.583], [40.06113, 116.58286], [40.06695, 116.58196], [40.07935, 116.58704]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_342517d5a6e5d43b73d6f4f875ff77af);
+        
+    
+            poly_line_b896680249ad78a513ddead60152d1a9.bindTooltip(
+                `<div>
+                     Convoy 8 | Taxi 3835
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b6f0c26c59b84708b3deeaa55e4fed98 = L.circleMarker(
+                [40.06031, 116.583],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_342517d5a6e5d43b73d6f4f875ff77af);
+        
+    
+            circle_marker_b6f0c26c59b84708b3deeaa55e4fed98.bindTooltip(
+                `<div>
+                     Start: Taxi 3835
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_89e43580533f35c1bc144c3970908b9d = L.marker(
+                [40.07935, 116.58704],
+                {
+}
+            ).addTo(feature_group_342517d5a6e5d43b73d6f4f875ff77af);
+        
+    
+            var icon_7a3c72efa8d6041e38db1dd6ebcb555a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_89e43580533f35c1bc144c3970908b9d.bindTooltip(
+                `<div>
+                     End: Taxi 3835
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_89e43580533f35c1bc144c3970908b9d.setIcon(icon_7a3c72efa8d6041e38db1dd6ebcb555a);
+            
+    
+            var poly_line_7b9081aafe060e4dd24e49b9b3e303fb = L.polyline(
+                [[40.06116, 116.58272], [40.0604, 116.58286], [40.06435, 116.58233], [40.07672, 116.58553]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_342517d5a6e5d43b73d6f4f875ff77af);
+        
+    
+            poly_line_7b9081aafe060e4dd24e49b9b3e303fb.bindTooltip(
+                `<div>
+                     Convoy 8 | Taxi 6996
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ede8fb183a055f23b640ae8033d7ab81 = L.circleMarker(
+                [40.06116, 116.58272],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_342517d5a6e5d43b73d6f4f875ff77af);
+        
+    
+            circle_marker_ede8fb183a055f23b640ae8033d7ab81.bindTooltip(
+                `<div>
+                     Start: Taxi 6996
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5f47b945b687d5d2bfa3692eb5245ad9 = L.marker(
+                [40.07672, 116.58553],
+                {
+}
+            ).addTo(feature_group_342517d5a6e5d43b73d6f4f875ff77af);
+        
+    
+            var icon_233f24bd0b312721fa382990b58cb54e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5f47b945b687d5d2bfa3692eb5245ad9.bindTooltip(
+                `<div>
+                     End: Taxi 6996
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5f47b945b687d5d2bfa3692eb5245ad9.setIcon(icon_233f24bd0b312721fa382990b58cb54e);
+            
+    
+            feature_group_342517d5a6e5d43b73d6f4f875ff77af.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_9ba5bfd81e81e6caacc4b27daa8e2e86 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_a1291db5b7412c51a31c91e90ecdfbc2 = L.polyline(
+                [[40.07122, 116.56479], [40.06594, 116.56316], [40.06594, 116.56316], [40.06319, 116.57204]],
+                {"bubblingMouseEvents": true, "color": "magenta", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "magenta", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_9ba5bfd81e81e6caacc4b27daa8e2e86);
+        
+    
+            poly_line_a1291db5b7412c51a31c91e90ecdfbc2.bindTooltip(
+                `<div>
+                     Convoy 9 | Taxi 5520
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ffeb34faf92f95aea0774c23428ccafb = L.circleMarker(
+                [40.07122, 116.56479],
+                {"bubblingMouseEvents": true, "color": "magenta", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9ba5bfd81e81e6caacc4b27daa8e2e86);
+        
+    
+            circle_marker_ffeb34faf92f95aea0774c23428ccafb.bindTooltip(
+                `<div>
+                     Start: Taxi 5520
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a48bf312ffc4c2dcc9c1ef20b06e0357 = L.marker(
+                [40.06319, 116.57204],
+                {
+}
+            ).addTo(feature_group_9ba5bfd81e81e6caacc4b27daa8e2e86);
+        
+    
+            var icon_32d62a01ff80b57e69d22d2f5e5598e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "magenta",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a48bf312ffc4c2dcc9c1ef20b06e0357.bindTooltip(
+                `<div>
+                     End: Taxi 5520
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a48bf312ffc4c2dcc9c1ef20b06e0357.setIcon(icon_32d62a01ff80b57e69d22d2f5e5598e6);
+            
+    
+            var poly_line_a72ef0bf4e8b73bca5138ece10b0f353 = L.polyline(
+                [[40.07128, 116.5657], [40.07009, 116.5628], [40.06524, 116.56332], [40.06322, 116.57139]],
+                {"bubblingMouseEvents": true, "color": "magenta", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "magenta", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_9ba5bfd81e81e6caacc4b27daa8e2e86);
+        
+    
+            poly_line_a72ef0bf4e8b73bca5138ece10b0f353.bindTooltip(
+                `<div>
+                     Convoy 9 | Taxi 6657
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_838e741b01662e7b2d40344592435ca3 = L.circleMarker(
+                [40.07128, 116.5657],
+                {"bubblingMouseEvents": true, "color": "magenta", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9ba5bfd81e81e6caacc4b27daa8e2e86);
+        
+    
+            circle_marker_838e741b01662e7b2d40344592435ca3.bindTooltip(
+                `<div>
+                     Start: Taxi 6657
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c2eb7e2dd9d655d8329a9c083a2f49c1 = L.marker(
+                [40.06322, 116.57139],
+                {
+}
+            ).addTo(feature_group_9ba5bfd81e81e6caacc4b27daa8e2e86);
+        
+    
+            var icon_4a66953ea84581596497c7decfaf90ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "magenta",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c2eb7e2dd9d655d8329a9c083a2f49c1.bindTooltip(
+                `<div>
+                     End: Taxi 6657
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c2eb7e2dd9d655d8329a9c083a2f49c1.setIcon(icon_4a66953ea84581596497c7decfaf90ea);
+            
+    
+            var poly_line_3e48a537cf4ba27ee7d12224df0706cf = L.polyline(
+                [[40.07115, 116.56425], [40.07011, 116.56267], [40.06532, 116.56339], [40.06312, 116.5733]],
+                {"bubblingMouseEvents": true, "color": "magenta", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "magenta", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_9ba5bfd81e81e6caacc4b27daa8e2e86);
+        
+    
+            poly_line_3e48a537cf4ba27ee7d12224df0706cf.bindTooltip(
+                `<div>
+                     Convoy 9 | Taxi 5291
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8032e1893b5544018fc777f52b6b53f2 = L.circleMarker(
+                [40.07115, 116.56425],
+                {"bubblingMouseEvents": true, "color": "magenta", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9ba5bfd81e81e6caacc4b27daa8e2e86);
+        
+    
+            circle_marker_8032e1893b5544018fc777f52b6b53f2.bindTooltip(
+                `<div>
+                     Start: Taxi 5291
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_074415696c62920655e6063a717aab5d = L.marker(
+                [40.06312, 116.5733],
+                {
+}
+            ).addTo(feature_group_9ba5bfd81e81e6caacc4b27daa8e2e86);
+        
+    
+            var icon_fdbad31137d7f9fe4947c77ab4dc99da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "magenta",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_074415696c62920655e6063a717aab5d.bindTooltip(
+                `<div>
+                     End: Taxi 5291
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_074415696c62920655e6063a717aab5d.setIcon(icon_fdbad31137d7f9fe4947c77ab4dc99da);
+            
+    
+            var poly_line_ac0d1893f96b18b4e18807279a35be2c = L.polyline(
+                [[40.07102, 116.56417], [40.06634, 116.56308], [40.06548, 116.56328], [40.06307, 116.5732]],
+                {"bubblingMouseEvents": true, "color": "magenta", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "magenta", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_9ba5bfd81e81e6caacc4b27daa8e2e86);
+        
+    
+            poly_line_ac0d1893f96b18b4e18807279a35be2c.bindTooltip(
+                `<div>
+                     Convoy 9 | Taxi 2957
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db8a5188448fd44e64281df6f86bf384 = L.circleMarker(
+                [40.07102, 116.56417],
+                {"bubblingMouseEvents": true, "color": "magenta", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9ba5bfd81e81e6caacc4b27daa8e2e86);
+        
+    
+            circle_marker_db8a5188448fd44e64281df6f86bf384.bindTooltip(
+                `<div>
+                     Start: Taxi 2957
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_44cfcc8e184ac175912a5124de5685a7 = L.marker(
+                [40.06307, 116.5732],
+                {
+}
+            ).addTo(feature_group_9ba5bfd81e81e6caacc4b27daa8e2e86);
+        
+    
+            var icon_d6c811ad02368eeaa74dc79827cad4a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "magenta",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_44cfcc8e184ac175912a5124de5685a7.bindTooltip(
+                `<div>
+                     End: Taxi 2957
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_44cfcc8e184ac175912a5124de5685a7.setIcon(icon_d6c811ad02368eeaa74dc79827cad4a6);
+            
+    
+            feature_group_9ba5bfd81e81e6caacc4b27daa8e2e86.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_74b985dfca6e2ffbccb631cddb82e777 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_d7a8541133be3959fa7862c69b397f22 = L.polyline(
+                [[40.07079, 116.56419], [40.06789, 116.56279], [40.06346, 116.5696]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_74b985dfca6e2ffbccb631cddb82e777);
+        
+    
+            poly_line_d7a8541133be3959fa7862c69b397f22.bindTooltip(
+                `<div>
+                     Convoy 10 | Taxi 7351
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_78334ae0cab7893685dad89211b74119 = L.circleMarker(
+                [40.07079, 116.56419],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_74b985dfca6e2ffbccb631cddb82e777);
+        
+    
+            circle_marker_78334ae0cab7893685dad89211b74119.bindTooltip(
+                `<div>
+                     Start: Taxi 7351
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6c2520e1208ce6342ff1318dbc1d7575 = L.marker(
+                [40.06346, 116.5696],
+                {
+}
+            ).addTo(feature_group_74b985dfca6e2ffbccb631cddb82e777);
+        
+    
+            var icon_cf3f0f1947743b564eab48c6854d8004 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6c2520e1208ce6342ff1318dbc1d7575.bindTooltip(
+                `<div>
+                     End: Taxi 7351
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c2520e1208ce6342ff1318dbc1d7575.setIcon(icon_cf3f0f1947743b564eab48c6854d8004);
+            
+    
+            var poly_line_7b7ebc629a328c54037cc7f2a90a472b = L.polyline(
+                [[40.07125, 116.56541], [40.0682, 116.56207], [40.06346, 116.56907]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_74b985dfca6e2ffbccb631cddb82e777);
+        
+    
+            poly_line_7b7ebc629a328c54037cc7f2a90a472b.bindTooltip(
+                `<div>
+                     Convoy 10 | Taxi 9804
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6603ad77b33cafc06b1be53d700d9c1f = L.circleMarker(
+                [40.07125, 116.56541],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_74b985dfca6e2ffbccb631cddb82e777);
+        
+    
+            circle_marker_6603ad77b33cafc06b1be53d700d9c1f.bindTooltip(
+                `<div>
+                     Start: Taxi 9804
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6326c360b8c67e0f28f8df99368b4c83 = L.marker(
+                [40.06346, 116.56907],
+                {
+}
+            ).addTo(feature_group_74b985dfca6e2ffbccb631cddb82e777);
+        
+    
+            var icon_fcaecaf971a0717b4a012ac9bf4aa6b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6326c360b8c67e0f28f8df99368b4c83.bindTooltip(
+                `<div>
+                     End: Taxi 9804
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6326c360b8c67e0f28f8df99368b4c83.setIcon(icon_fcaecaf971a0717b4a012ac9bf4aa6b4);
+            
+    
+            var poly_line_25b972910b293cfa0cf83cdbbc1fb154 = L.polyline(
+                [[40.07112, 116.56423], [40.06851, 116.5624], [40.06352, 116.5693]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_74b985dfca6e2ffbccb631cddb82e777);
+        
+    
+            poly_line_25b972910b293cfa0cf83cdbbc1fb154.bindTooltip(
+                `<div>
+                     Convoy 10 | Taxi 4047
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_170995242e18775518bbff8c91c75522 = L.circleMarker(
+                [40.07112, 116.56423],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_74b985dfca6e2ffbccb631cddb82e777);
+        
+    
+            circle_marker_170995242e18775518bbff8c91c75522.bindTooltip(
+                `<div>
+                     Start: Taxi 4047
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3a0d86b50c76b8ad4f0700a40fbbe215 = L.marker(
+                [40.06352, 116.5693],
+                {
+}
+            ).addTo(feature_group_74b985dfca6e2ffbccb631cddb82e777);
+        
+    
+            var icon_4d894c3a5bb09eda443aff1061f71be8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3a0d86b50c76b8ad4f0700a40fbbe215.bindTooltip(
+                `<div>
+                     End: Taxi 4047
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3a0d86b50c76b8ad4f0700a40fbbe215.setIcon(icon_4d894c3a5bb09eda443aff1061f71be8);
+            
+    
+            feature_group_74b985dfca6e2ffbccb631cddb82e777.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_5d45bdce7627c0a23a092d42ce0a1059 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_3112f7e6cac2f840836acc735304c51a = L.polyline(
+                [[39.9679, 116.40954], [39.96774, 116.40624], [39.96751, 116.40951]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_5d45bdce7627c0a23a092d42ce0a1059);
+        
+    
+            poly_line_3112f7e6cac2f840836acc735304c51a.bindTooltip(
+                `<div>
+                     Convoy 11 | Taxi 720
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a25d177e4211e7a0897fa2f31d5d65f = L.circleMarker(
+                [39.9679, 116.40954],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5d45bdce7627c0a23a092d42ce0a1059);
+        
+    
+            circle_marker_1a25d177e4211e7a0897fa2f31d5d65f.bindTooltip(
+                `<div>
+                     Start: Taxi 720
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c42e6957f42ccc280772c3027de0d650 = L.marker(
+                [39.96751, 116.40951],
+                {
+}
+            ).addTo(feature_group_5d45bdce7627c0a23a092d42ce0a1059);
+        
+    
+            var icon_9ed116731da6d1398e86926ec372ec2a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c42e6957f42ccc280772c3027de0d650.bindTooltip(
+                `<div>
+                     End: Taxi 720
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c42e6957f42ccc280772c3027de0d650.setIcon(icon_9ed116731da6d1398e86926ec372ec2a);
+            
+    
+            var poly_line_f0d6a9c92ea770d26ed608e5b619b832 = L.polyline(
+                [[39.96773, 116.4083], [39.96745, 116.40945], [39.96742, 116.41067]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_5d45bdce7627c0a23a092d42ce0a1059);
+        
+    
+            poly_line_f0d6a9c92ea770d26ed608e5b619b832.bindTooltip(
+                `<div>
+                     Convoy 11 | Taxi 8462
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_71d8ac4c10010de2996c844218ef8773 = L.circleMarker(
+                [39.96773, 116.4083],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5d45bdce7627c0a23a092d42ce0a1059);
+        
+    
+            circle_marker_71d8ac4c10010de2996c844218ef8773.bindTooltip(
+                `<div>
+                     Start: Taxi 8462
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5dc625d9b6ed07f0845e4e297438da7b = L.marker(
+                [39.96742, 116.41067],
+                {
+}
+            ).addTo(feature_group_5d45bdce7627c0a23a092d42ce0a1059);
+        
+    
+            var icon_e51b6e2c57f62bfed8cbb903ccb7e2c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5dc625d9b6ed07f0845e4e297438da7b.bindTooltip(
+                `<div>
+                     End: Taxi 8462
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5dc625d9b6ed07f0845e4e297438da7b.setIcon(icon_e51b6e2c57f62bfed8cbb903ccb7e2c9);
+            
+    
+            var poly_line_9888d4979879c5193decab902ef256e0 = L.polyline(
+                [[39.96782, 116.40813], [39.96772, 116.40479], [39.9675, 116.40782]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_5d45bdce7627c0a23a092d42ce0a1059);
+        
+    
+            poly_line_9888d4979879c5193decab902ef256e0.bindTooltip(
+                `<div>
+                     Convoy 11 | Taxi 2983
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52159c93227009f3e625c1a9bda7ef81 = L.circleMarker(
+                [39.96782, 116.40813],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_5d45bdce7627c0a23a092d42ce0a1059);
+        
+    
+            circle_marker_52159c93227009f3e625c1a9bda7ef81.bindTooltip(
+                `<div>
+                     Start: Taxi 2983
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fb249a1775a663402874d73d63bf308f = L.marker(
+                [39.9675, 116.40782],
+                {
+}
+            ).addTo(feature_group_5d45bdce7627c0a23a092d42ce0a1059);
+        
+    
+            var icon_43479f7c6a3b53fd7f4bc7e943a33843 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_fb249a1775a663402874d73d63bf308f.bindTooltip(
+                `<div>
+                     End: Taxi 2983
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fb249a1775a663402874d73d63bf308f.setIcon(icon_43479f7c6a3b53fd7f4bc7e943a33843);
+            
+    
+            feature_group_5d45bdce7627c0a23a092d42ce0a1059.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_8ed9698fc2743c092a3cbccafa361108 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_8e724a0307dd842d84543e0061344293 = L.polyline(
+                [[40.07024, 116.56402], [40.06457, 116.56359], [40.07275, 116.58096]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_8ed9698fc2743c092a3cbccafa361108);
+        
+    
+            poly_line_8e724a0307dd842d84543e0061344293.bindTooltip(
+                `<div>
+                     Convoy 12 | Taxi 5321
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2fdce33e67643c7cf1b3408e70568ac5 = L.circleMarker(
+                [40.07024, 116.56402],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8ed9698fc2743c092a3cbccafa361108);
+        
+    
+            circle_marker_2fdce33e67643c7cf1b3408e70568ac5.bindTooltip(
+                `<div>
+                     Start: Taxi 5321
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8d93eb8b033ba3f00a998b00b909f53d = L.marker(
+                [40.07275, 116.58096],
+                {
+}
+            ).addTo(feature_group_8ed9698fc2743c092a3cbccafa361108);
+        
+    
+            var icon_0f1e985ca7ebc16b4fac9f8421459a3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8d93eb8b033ba3f00a998b00b909f53d.bindTooltip(
+                `<div>
+                     End: Taxi 5321
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8d93eb8b033ba3f00a998b00b909f53d.setIcon(icon_0f1e985ca7ebc16b4fac9f8421459a3e);
+            
+    
+            var poly_line_44c18875576245405fb87bbdd679619e = L.polyline(
+                [[40.07047, 116.56422], [40.06435, 116.56378], [40.07342, 116.58082]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_8ed9698fc2743c092a3cbccafa361108);
+        
+    
+            poly_line_44c18875576245405fb87bbdd679619e.bindTooltip(
+                `<div>
+                     Convoy 12 | Taxi 2771
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f0ba2ca8ce6e56531822cde09a93f1c = L.circleMarker(
+                [40.07047, 116.56422],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8ed9698fc2743c092a3cbccafa361108);
+        
+    
+            circle_marker_3f0ba2ca8ce6e56531822cde09a93f1c.bindTooltip(
+                `<div>
+                     Start: Taxi 2771
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e2f41cfb6d7e227dd55bed1372b19849 = L.marker(
+                [40.07342, 116.58082],
+                {
+}
+            ).addTo(feature_group_8ed9698fc2743c092a3cbccafa361108);
+        
+    
+            var icon_39d7079242cf63e60481a29135685f00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_e2f41cfb6d7e227dd55bed1372b19849.bindTooltip(
+                `<div>
+                     End: Taxi 2771
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e2f41cfb6d7e227dd55bed1372b19849.setIcon(icon_39d7079242cf63e60481a29135685f00);
+            
+    
+            var poly_line_179baba90ed3aafc2d7a20c866e256ae = L.polyline(
+                [[40.0707, 116.56424], [40.06629, 116.56306], [40.07122, 116.5813]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_8ed9698fc2743c092a3cbccafa361108);
+        
+    
+            poly_line_179baba90ed3aafc2d7a20c866e256ae.bindTooltip(
+                `<div>
+                     Convoy 12 | Taxi 5327
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9713cae7fd4d5132595c02635a077977 = L.circleMarker(
+                [40.0707, 116.56424],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8ed9698fc2743c092a3cbccafa361108);
+        
+    
+            circle_marker_9713cae7fd4d5132595c02635a077977.bindTooltip(
+                `<div>
+                     Start: Taxi 5327
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_370e7ebf60d820674a7d271e8aba1d74 = L.marker(
+                [40.07122, 116.5813],
+                {
+}
+            ).addTo(feature_group_8ed9698fc2743c092a3cbccafa361108);
+        
+    
+            var icon_6002def7eaebd14e7e234f89f67f44fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_370e7ebf60d820674a7d271e8aba1d74.bindTooltip(
+                `<div>
+                     End: Taxi 5327
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_370e7ebf60d820674a7d271e8aba1d74.setIcon(icon_6002def7eaebd14e7e234f89f67f44fb);
+            
+    
+            feature_group_8ed9698fc2743c092a3cbccafa361108.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_165fc650e6457626c543341d93c5afff = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_7469d2000ff5e4650fd060be96ea29e2 = L.polyline(
+                [[40.06496, 116.56352], [40.06533, 116.56344], [40.07039, 116.56615]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_165fc650e6457626c543341d93c5afff);
+        
+    
+            poly_line_7469d2000ff5e4650fd060be96ea29e2.bindTooltip(
+                `<div>
+                     Convoy 13 | Taxi 7120
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be3a6314d3d41544ed582b8558ac7f2f = L.circleMarker(
+                [40.06496, 116.56352],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_165fc650e6457626c543341d93c5afff);
+        
+    
+            circle_marker_be3a6314d3d41544ed582b8558ac7f2f.bindTooltip(
+                `<div>
+                     Start: Taxi 7120
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c0876cbefbde402d769473194fbc2ff2 = L.marker(
+                [40.07039, 116.56615],
+                {
+}
+            ).addTo(feature_group_165fc650e6457626c543341d93c5afff);
+        
+    
+            var icon_e7ec412b376f0ef08df89637065ea892 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c0876cbefbde402d769473194fbc2ff2.bindTooltip(
+                `<div>
+                     End: Taxi 7120
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0876cbefbde402d769473194fbc2ff2.setIcon(icon_e7ec412b376f0ef08df89637065ea892);
+            
+    
+            var poly_line_2de971df5aeeb7f9084130b591c95334 = L.polyline(
+                [[40.06532, 116.5634], [40.06606, 116.56323], [40.07048, 116.56658]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_165fc650e6457626c543341d93c5afff);
+        
+    
+            poly_line_2de971df5aeeb7f9084130b591c95334.bindTooltip(
+                `<div>
+                     Convoy 13 | Taxi 3722
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b9740d98120217ebe98fca817e23d919 = L.circleMarker(
+                [40.06532, 116.5634],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_165fc650e6457626c543341d93c5afff);
+        
+    
+            circle_marker_b9740d98120217ebe98fca817e23d919.bindTooltip(
+                `<div>
+                     Start: Taxi 3722
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fd0999c6027b9fef4cadea03c0f52e66 = L.marker(
+                [40.07048, 116.56658],
+                {
+}
+            ).addTo(feature_group_165fc650e6457626c543341d93c5afff);
+        
+    
+            var icon_b705273d50dc8b89bce83635040107c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_fd0999c6027b9fef4cadea03c0f52e66.bindTooltip(
+                `<div>
+                     End: Taxi 3722
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd0999c6027b9fef4cadea03c0f52e66.setIcon(icon_b705273d50dc8b89bce83635040107c9);
+            
+    
+            var poly_line_1d526270366447b3c3e17f07c9be78e0 = L.polyline(
+                [[40.06568, 116.5634], [40.0663, 116.56327], [40.07075, 116.56699]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_165fc650e6457626c543341d93c5afff);
+        
+    
+            poly_line_1d526270366447b3c3e17f07c9be78e0.bindTooltip(
+                `<div>
+                     Convoy 13 | Taxi 5844
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_45477020dac7f12609c33407ac168ad0 = L.circleMarker(
+                [40.06568, 116.5634],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_165fc650e6457626c543341d93c5afff);
+        
+    
+            circle_marker_45477020dac7f12609c33407ac168ad0.bindTooltip(
+                `<div>
+                     Start: Taxi 5844
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9eafd0f33817d3057489fe32c52a668c = L.marker(
+                [40.07075, 116.56699],
+                {
+}
+            ).addTo(feature_group_165fc650e6457626c543341d93c5afff);
+        
+    
+            var icon_89e7ae78320d8b423d7047558805b9d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9eafd0f33817d3057489fe32c52a668c.bindTooltip(
+                `<div>
+                     End: Taxi 5844
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9eafd0f33817d3057489fe32c52a668c.setIcon(icon_89e7ae78320d8b423d7047558805b9d8);
+            
+    
+            feature_group_165fc650e6457626c543341d93c5afff.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_b14ce1801eda4cedf026855e7be58fcf = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_f0c669877cf307efc3dbf97a167b574b = L.polyline(
+                [[40.07079, 116.56426], [40.0675, 116.56281], [40.06797, 116.58176], [40.07583, 116.58344]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_b14ce1801eda4cedf026855e7be58fcf);
+        
+    
+            poly_line_f0c669877cf307efc3dbf97a167b574b.bindTooltip(
+                `<div>
+                     Convoy 14 | Taxi 3688
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_316b908e84324af155e905e47e0146b1 = L.circleMarker(
+                [40.07079, 116.56426],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_b14ce1801eda4cedf026855e7be58fcf);
+        
+    
+            circle_marker_316b908e84324af155e905e47e0146b1.bindTooltip(
+                `<div>
+                     Start: Taxi 3688
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_45b3efa3a5babbb0a6665d68ad2ee6bf = L.marker(
+                [40.07583, 116.58344],
+                {
+}
+            ).addTo(feature_group_b14ce1801eda4cedf026855e7be58fcf);
+        
+    
+            var icon_c40c8489de09dbcab03f7441201f4558 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_45b3efa3a5babbb0a6665d68ad2ee6bf.bindTooltip(
+                `<div>
+                     End: Taxi 3688
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_45b3efa3a5babbb0a6665d68ad2ee6bf.setIcon(icon_c40c8489de09dbcab03f7441201f4558);
+            
+    
+            var poly_line_05e8aa2b9cea468a24b26416467120d9 = L.polyline(
+                [[40.0705, 116.56422], [40.0684, 116.56258], [40.0676, 116.58183], [40.07468, 116.58215]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_b14ce1801eda4cedf026855e7be58fcf);
+        
+    
+            poly_line_05e8aa2b9cea468a24b26416467120d9.bindTooltip(
+                `<div>
+                     Convoy 14 | Taxi 9193
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9cb71fe60660e2aac1118636ecb16e0 = L.circleMarker(
+                [40.0705, 116.56422],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_b14ce1801eda4cedf026855e7be58fcf);
+        
+    
+            circle_marker_f9cb71fe60660e2aac1118636ecb16e0.bindTooltip(
+                `<div>
+                     Start: Taxi 9193
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a19c8791f3b68064e71eddd272103b39 = L.marker(
+                [40.07468, 116.58215],
+                {
+}
+            ).addTo(feature_group_b14ce1801eda4cedf026855e7be58fcf);
+        
+    
+            var icon_402815b6875e2e9e677d693bccdd76a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a19c8791f3b68064e71eddd272103b39.bindTooltip(
+                `<div>
+                     End: Taxi 9193
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a19c8791f3b68064e71eddd272103b39.setIcon(icon_402815b6875e2e9e677d693bccdd76a5);
+            
+    
+            var poly_line_5611b94e53ed6c205eb5be6d0d47019d = L.polyline(
+                [[40.07086, 116.56529], [40.06838, 116.56263], [40.0674, 116.58187], [40.07483, 116.58287]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_b14ce1801eda4cedf026855e7be58fcf);
+        
+    
+            poly_line_5611b94e53ed6c205eb5be6d0d47019d.bindTooltip(
+                `<div>
+                     Convoy 14 | Taxi 756
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef8a3925a48330c4f0949bef5a7463fb = L.circleMarker(
+                [40.07086, 116.56529],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_b14ce1801eda4cedf026855e7be58fcf);
+        
+    
+            circle_marker_ef8a3925a48330c4f0949bef5a7463fb.bindTooltip(
+                `<div>
+                     Start: Taxi 756
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_21b7816a568f8fc01a18cc9dac9b9707 = L.marker(
+                [40.07483, 116.58287],
+                {
+}
+            ).addTo(feature_group_b14ce1801eda4cedf026855e7be58fcf);
+        
+    
+            var icon_4cd6784d89a1d2b88cc55d4b47a26c9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_21b7816a568f8fc01a18cc9dac9b9707.bindTooltip(
+                `<div>
+                     End: Taxi 756
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_21b7816a568f8fc01a18cc9dac9b9707.setIcon(icon_4cd6784d89a1d2b88cc55d4b47a26c9b);
+            
+    
+            var poly_line_cd1fb842ad0afee2aa59cbff669614c9 = L.polyline(
+                [[40.0708, 116.56425], [40.06839, 116.56255], [40.06706, 116.58194], [40.07516, 116.58191]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_b14ce1801eda4cedf026855e7be58fcf);
+        
+    
+            poly_line_cd1fb842ad0afee2aa59cbff669614c9.bindTooltip(
+                `<div>
+                     Convoy 14 | Taxi 8666
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3cf0fd1d647ff9fa9703b21f7fc042c = L.circleMarker(
+                [40.0708, 116.56425],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_b14ce1801eda4cedf026855e7be58fcf);
+        
+    
+            circle_marker_f3cf0fd1d647ff9fa9703b21f7fc042c.bindTooltip(
+                `<div>
+                     Start: Taxi 8666
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_43e6a471890e2d4c5d9da9a51192e23a = L.marker(
+                [40.07516, 116.58191],
+                {
+}
+            ).addTo(feature_group_b14ce1801eda4cedf026855e7be58fcf);
+        
+    
+            var icon_466010512c124e8c93764a4fa1546685 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_43e6a471890e2d4c5d9da9a51192e23a.bindTooltip(
+                `<div>
+                     End: Taxi 8666
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_43e6a471890e2d4c5d9da9a51192e23a.setIcon(icon_466010512c124e8c93764a4fa1546685);
+            
+    
+            var poly_line_8610e93e14aac7c209e1ffdaa62381d0 = L.polyline(
+                [[40.07078, 116.56473], [40.06894, 116.56251], [40.06816, 116.58181], [40.07481, 116.58279]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_b14ce1801eda4cedf026855e7be58fcf);
+        
+    
+            poly_line_8610e93e14aac7c209e1ffdaa62381d0.bindTooltip(
+                `<div>
+                     Convoy 14 | Taxi 2239
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e28c9ac7b97d6310dcc11d6994aa0e2 = L.circleMarker(
+                [40.07078, 116.56473],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_b14ce1801eda4cedf026855e7be58fcf);
+        
+    
+            circle_marker_8e28c9ac7b97d6310dcc11d6994aa0e2.bindTooltip(
+                `<div>
+                     Start: Taxi 2239
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_af368e7f0cdbf232b8933dc7537a5254 = L.marker(
+                [40.07481, 116.58279],
+                {
+}
+            ).addTo(feature_group_b14ce1801eda4cedf026855e7be58fcf);
+        
+    
+            var icon_f8a1ac8cc6fbcdb60327da6dc9d96ee1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_af368e7f0cdbf232b8933dc7537a5254.bindTooltip(
+                `<div>
+                     End: Taxi 2239
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_af368e7f0cdbf232b8933dc7537a5254.setIcon(icon_f8a1ac8cc6fbcdb60327da6dc9d96ee1);
+            
+    
+            feature_group_b14ce1801eda4cedf026855e7be58fcf.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_9e3cb39fa7001d3e7ca28e01af229518 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_a1986722602e42017431066f7fb2db72 = L.polyline(
+                [[39.96055, 116.3473], [39.94765, 116.3501], [39.93693, 116.34935]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_9e3cb39fa7001d3e7ca28e01af229518);
+        
+    
+            poly_line_a1986722602e42017431066f7fb2db72.bindTooltip(
+                `<div>
+                     Convoy 15 | Taxi 544
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_22281a3050b7cba31fe0f0b1199bdb50 = L.circleMarker(
+                [39.96055, 116.3473],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e3cb39fa7001d3e7ca28e01af229518);
+        
+    
+            circle_marker_22281a3050b7cba31fe0f0b1199bdb50.bindTooltip(
+                `<div>
+                     Start: Taxi 544
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_000091111ed3db28533453781fed089b = L.marker(
+                [39.93693, 116.34935],
+                {
+}
+            ).addTo(feature_group_9e3cb39fa7001d3e7ca28e01af229518);
+        
+    
+            var icon_9482b551459ff534e6282a0717ea7252 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_000091111ed3db28533453781fed089b.bindTooltip(
+                `<div>
+                     End: Taxi 544
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_000091111ed3db28533453781fed089b.setIcon(icon_9482b551459ff534e6282a0717ea7252);
+            
+    
+            var poly_line_484241e2869de1c51f5e336b396939fa = L.polyline(
+                [[39.958, 116.3478], [39.94601, 116.35003], [39.92992, 116.34957]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_9e3cb39fa7001d3e7ca28e01af229518);
+        
+    
+            poly_line_484241e2869de1c51f5e336b396939fa.bindTooltip(
+                `<div>
+                     Convoy 15 | Taxi 4337
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c1fb905653940d2b00544190d0b06b4d = L.circleMarker(
+                [39.958, 116.3478],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e3cb39fa7001d3e7ca28e01af229518);
+        
+    
+            circle_marker_c1fb905653940d2b00544190d0b06b4d.bindTooltip(
+                `<div>
+                     Start: Taxi 4337
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cd0d79bc132f4f556c7403adfdd6ee18 = L.marker(
+                [39.92992, 116.34957],
+                {
+}
+            ).addTo(feature_group_9e3cb39fa7001d3e7ca28e01af229518);
+        
+    
+            var icon_ee887b696ac1f4e1586e98a478b9125b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_cd0d79bc132f4f556c7403adfdd6ee18.bindTooltip(
+                `<div>
+                     End: Taxi 4337
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cd0d79bc132f4f556c7403adfdd6ee18.setIcon(icon_ee887b696ac1f4e1586e98a478b9125b);
+            
+    
+            var poly_line_b8e14962149a1fc86be7413b53d348e9 = L.polyline(
+                [[39.95842, 116.34755], [39.94705, 116.35005], [39.9358, 116.34939]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_9e3cb39fa7001d3e7ca28e01af229518);
+        
+    
+            poly_line_b8e14962149a1fc86be7413b53d348e9.bindTooltip(
+                `<div>
+                     Convoy 15 | Taxi 5317
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f510cfe29aa2767c58c7a515c8a87880 = L.circleMarker(
+                [39.95842, 116.34755],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_9e3cb39fa7001d3e7ca28e01af229518);
+        
+    
+            circle_marker_f510cfe29aa2767c58c7a515c8a87880.bindTooltip(
+                `<div>
+                     Start: Taxi 5317
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_db761808b48a0712d3425970b46c28e8 = L.marker(
+                [39.9358, 116.34939],
+                {
+}
+            ).addTo(feature_group_9e3cb39fa7001d3e7ca28e01af229518);
+        
+    
+            var icon_9b617bf4e6c7d431264b23b1fba5ae8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_db761808b48a0712d3425970b46c28e8.bindTooltip(
+                `<div>
+                     End: Taxi 5317
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db761808b48a0712d3425970b46c28e8.setIcon(icon_9b617bf4e6c7d431264b23b1fba5ae8f);
+            
+    
+            feature_group_9e3cb39fa7001d3e7ca28e01af229518.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_42e14639091da539446cd992678a25ff = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_900a1a56768b4094783bcdc34f39bddc = L.polyline(
+                [[39.94365, 116.30373], [39.92089, 116.30404], [39.89693, 116.31505]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_42e14639091da539446cd992678a25ff);
+        
+    
+            poly_line_900a1a56768b4094783bcdc34f39bddc.bindTooltip(
+                `<div>
+                     Convoy 16 | Taxi 3328
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f5a632c1ca577815fec684e89402e59 = L.circleMarker(
+                [39.94365, 116.30373],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42e14639091da539446cd992678a25ff);
+        
+    
+            circle_marker_0f5a632c1ca577815fec684e89402e59.bindTooltip(
+                `<div>
+                     Start: Taxi 3328
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5469eb92ef995c29c167a19f1fcb445f = L.marker(
+                [39.89693, 116.31505],
+                {
+}
+            ).addTo(feature_group_42e14639091da539446cd992678a25ff);
+        
+    
+            var icon_4d2aa5f84965930a17260e36357943d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5469eb92ef995c29c167a19f1fcb445f.bindTooltip(
+                `<div>
+                     End: Taxi 3328
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5469eb92ef995c29c167a19f1fcb445f.setIcon(icon_4d2aa5f84965930a17260e36357943d7);
+            
+    
+            var poly_line_c8b14d2e58d94368fc467b59e6122935 = L.polyline(
+                [[39.94146, 116.30398], [39.92147, 116.30408], [39.89556, 116.31003]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_42e14639091da539446cd992678a25ff);
+        
+    
+            poly_line_c8b14d2e58d94368fc467b59e6122935.bindTooltip(
+                `<div>
+                     Convoy 16 | Taxi 5537
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6eeee3a521828c5bf3ad512fa3dd3a0b = L.circleMarker(
+                [39.94146, 116.30398],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42e14639091da539446cd992678a25ff);
+        
+    
+            circle_marker_6eeee3a521828c5bf3ad512fa3dd3a0b.bindTooltip(
+                `<div>
+                     Start: Taxi 5537
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4ea4aba88da25d9736100c705914a502 = L.marker(
+                [39.89556, 116.31003],
+                {
+}
+            ).addTo(feature_group_42e14639091da539446cd992678a25ff);
+        
+    
+            var icon_27d9a9d3c4119518c05c7a1c43711003 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4ea4aba88da25d9736100c705914a502.bindTooltip(
+                `<div>
+                     End: Taxi 5537
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4ea4aba88da25d9736100c705914a502.setIcon(icon_27d9a9d3c4119518c05c7a1c43711003);
+            
+    
+            var poly_line_462a9c1a274ed19faa1ea182aaddfc7c = L.polyline(
+                [[39.93932, 116.3039], [39.91928, 116.30407], [39.8955, 116.31347]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_42e14639091da539446cd992678a25ff);
+        
+    
+            poly_line_462a9c1a274ed19faa1ea182aaddfc7c.bindTooltip(
+                `<div>
+                     Convoy 16 | Taxi 974
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0aa61f595eb44294f2620c7edff8cc90 = L.circleMarker(
+                [39.93932, 116.3039],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42e14639091da539446cd992678a25ff);
+        
+    
+            circle_marker_0aa61f595eb44294f2620c7edff8cc90.bindTooltip(
+                `<div>
+                     Start: Taxi 974
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_59c48c711b148abbc10281087c6a97fb = L.marker(
+                [39.8955, 116.31347],
+                {
+}
+            ).addTo(feature_group_42e14639091da539446cd992678a25ff);
+        
+    
+            var icon_e7e6d8def3de06db30da274272e3c31e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_59c48c711b148abbc10281087c6a97fb.bindTooltip(
+                `<div>
+                     End: Taxi 974
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_59c48c711b148abbc10281087c6a97fb.setIcon(icon_e7e6d8def3de06db30da274272e3c31e);
+            
+    
+            var poly_line_875802b866a9489fc92bd25cf7e278db = L.polyline(
+                [[39.94049, 116.30393], [39.91784, 116.30404], [39.89593, 116.31281]],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_42e14639091da539446cd992678a25ff);
+        
+    
+            poly_line_875802b866a9489fc92bd25cf7e278db.bindTooltip(
+                `<div>
+                     Convoy 16 | Taxi 4494
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_862104efb45c9e6a396b91d841f05aaf = L.circleMarker(
+                [39.94049, 116.30393],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_42e14639091da539446cd992678a25ff);
+        
+    
+            circle_marker_862104efb45c9e6a396b91d841f05aaf.bindTooltip(
+                `<div>
+                     Start: Taxi 4494
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4f18803bc8a9ce6a3209cef7637635a5 = L.marker(
+                [39.89593, 116.31281],
+                {
+}
+            ).addTo(feature_group_42e14639091da539446cd992678a25ff);
+        
+    
+            var icon_46870d5f695764506b5d29b729cf2134 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4f18803bc8a9ce6a3209cef7637635a5.bindTooltip(
+                `<div>
+                     End: Taxi 4494
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4f18803bc8a9ce6a3209cef7637635a5.setIcon(icon_46870d5f695764506b5d29b729cf2134);
+            
+    
+            feature_group_42e14639091da539446cd992678a25ff.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_45728ad7d6bf24c117fd5be6b002a90a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_5397c448f3abbead3ac950ea8979c464 = L.polyline(
+                [[39.96658, 116.34736], [39.94913, 116.3498], [39.93269, 116.34943]],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_45728ad7d6bf24c117fd5be6b002a90a);
+        
+    
+            poly_line_5397c448f3abbead3ac950ea8979c464.bindTooltip(
+                `<div>
+                     Convoy 17 | Taxi 3603
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad7e3afd5cc95fec8b767d80ffc1326d = L.circleMarker(
+                [39.96658, 116.34736],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_45728ad7d6bf24c117fd5be6b002a90a);
+        
+    
+            circle_marker_ad7e3afd5cc95fec8b767d80ffc1326d.bindTooltip(
+                `<div>
+                     Start: Taxi 3603
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3152a31603346cdc8b02da35f4797bc3 = L.marker(
+                [39.93269, 116.34943],
+                {
+}
+            ).addTo(feature_group_45728ad7d6bf24c117fd5be6b002a90a);
+        
+    
+            var icon_d4a5f3da6cb063eaca9b369c3aeba03d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3152a31603346cdc8b02da35f4797bc3.bindTooltip(
+                `<div>
+                     End: Taxi 3603
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3152a31603346cdc8b02da35f4797bc3.setIcon(icon_d4a5f3da6cb063eaca9b369c3aeba03d);
+            
+    
+            var poly_line_e3ff73df96eac155e490d3591c899df4 = L.polyline(
+                [[39.96576, 116.34738], [39.94998, 116.3496], [39.93373, 116.34963]],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_45728ad7d6bf24c117fd5be6b002a90a);
+        
+    
+            poly_line_e3ff73df96eac155e490d3591c899df4.bindTooltip(
+                `<div>
+                     Convoy 17 | Taxi 9580
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1162ba911ebca64137229df43067ded3 = L.circleMarker(
+                [39.96576, 116.34738],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_45728ad7d6bf24c117fd5be6b002a90a);
+        
+    
+            circle_marker_1162ba911ebca64137229df43067ded3.bindTooltip(
+                `<div>
+                     Start: Taxi 9580
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_57699453e13d5349658e8e1667184b52 = L.marker(
+                [39.93373, 116.34963],
+                {
+}
+            ).addTo(feature_group_45728ad7d6bf24c117fd5be6b002a90a);
+        
+    
+            var icon_35e915ab8ded065be6797f5ca342a9ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_57699453e13d5349658e8e1667184b52.bindTooltip(
+                `<div>
+                     End: Taxi 9580
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_57699453e13d5349658e8e1667184b52.setIcon(icon_35e915ab8ded065be6797f5ca342a9ae);
+            
+    
+            var poly_line_84b3fbe33655824fda3986f7ed3b5b5a = L.polyline(
+                [[39.96649, 116.34729], [39.95015, 116.34954], [39.93268, 116.34939]],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cadetblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_45728ad7d6bf24c117fd5be6b002a90a);
+        
+    
+            poly_line_84b3fbe33655824fda3986f7ed3b5b5a.bindTooltip(
+                `<div>
+                     Convoy 17 | Taxi 7293
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6706982c72baf4ac75f87863bec5b4ab = L.circleMarker(
+                [39.96649, 116.34729],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_45728ad7d6bf24c117fd5be6b002a90a);
+        
+    
+            circle_marker_6706982c72baf4ac75f87863bec5b4ab.bindTooltip(
+                `<div>
+                     Start: Taxi 7293
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_05ad6412441a9c6abe94a90eb5a6ac00 = L.marker(
+                [39.93268, 116.34939],
+                {
+}
+            ).addTo(feature_group_45728ad7d6bf24c117fd5be6b002a90a);
+        
+    
+            var icon_708ad7224dfe07274236cd8e030f1c1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_05ad6412441a9c6abe94a90eb5a6ac00.bindTooltip(
+                `<div>
+                     End: Taxi 7293
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_05ad6412441a9c6abe94a90eb5a6ac00.setIcon(icon_708ad7224dfe07274236cd8e030f1c1f);
+            
+    
+            feature_group_45728ad7d6bf24c117fd5be6b002a90a.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_aed0804e3da317dc293f729f05e96472 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_62b1ec5c1bde220f5ecaa6b1bee48068 = L.polyline(
+                [[40.07229, 116.58099], [40.07589, 116.58048], [40.07837, 116.58783]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_aed0804e3da317dc293f729f05e96472);
+        
+    
+            poly_line_62b1ec5c1bde220f5ecaa6b1bee48068.bindTooltip(
+                `<div>
+                     Convoy 18 | Taxi 4017
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aeada49ea9430b33388b81334b58441d = L.circleMarker(
+                [40.07229, 116.58099],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aed0804e3da317dc293f729f05e96472);
+        
+    
+            circle_marker_aeada49ea9430b33388b81334b58441d.bindTooltip(
+                `<div>
+                     Start: Taxi 4017
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3e532d9ffc59910d27daf690ed88b585 = L.marker(
+                [40.07837, 116.58783],
+                {
+}
+            ).addTo(feature_group_aed0804e3da317dc293f729f05e96472);
+        
+    
+            var icon_529f3a42492d623e24f4b05704a41ebd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3e532d9ffc59910d27daf690ed88b585.bindTooltip(
+                `<div>
+                     End: Taxi 4017
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3e532d9ffc59910d27daf690ed88b585.setIcon(icon_529f3a42492d623e24f4b05704a41ebd);
+            
+    
+            var poly_line_866d67ed0dd2d51c9ab21cdd40b08c35 = L.polyline(
+                [[40.07291, 116.58098], [40.07511, 116.58059], [40.07987, 116.58567]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_aed0804e3da317dc293f729f05e96472);
+        
+    
+            poly_line_866d67ed0dd2d51c9ab21cdd40b08c35.bindTooltip(
+                `<div>
+                     Convoy 18 | Taxi 3731
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c3cb91ec9c0553c5eb14b9de4e96469 = L.circleMarker(
+                [40.07291, 116.58098],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aed0804e3da317dc293f729f05e96472);
+        
+    
+            circle_marker_0c3cb91ec9c0553c5eb14b9de4e96469.bindTooltip(
+                `<div>
+                     Start: Taxi 3731
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9a9c5b0425e56cec4e1cb1178b082bc8 = L.marker(
+                [40.07987, 116.58567],
+                {
+}
+            ).addTo(feature_group_aed0804e3da317dc293f729f05e96472);
+        
+    
+            var icon_5afd31074e4d9a7881fb5404261b0926 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9a9c5b0425e56cec4e1cb1178b082bc8.bindTooltip(
+                `<div>
+                     End: Taxi 3731
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9a9c5b0425e56cec4e1cb1178b082bc8.setIcon(icon_5afd31074e4d9a7881fb5404261b0926);
+            
+    
+            var poly_line_e51a65ef01cfe7ab64c63c1c8804b0b2 = L.polyline(
+                [[40.07167, 116.5811], [40.07592, 116.58049], [40.07959, 116.58673]],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_aed0804e3da317dc293f729f05e96472);
+        
+    
+            poly_line_e51a65ef01cfe7ab64c63c1c8804b0b2.bindTooltip(
+                `<div>
+                     Convoy 18 | Taxi 7831
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9b1910e3a4a0af8418577870fa2ff6b1 = L.circleMarker(
+                [40.07167, 116.5811],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_aed0804e3da317dc293f729f05e96472);
+        
+    
+            circle_marker_9b1910e3a4a0af8418577870fa2ff6b1.bindTooltip(
+                `<div>
+                     Start: Taxi 7831
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c2d442d0004d2bc520a39982d5d0a47f = L.marker(
+                [40.07959, 116.58673],
+                {
+}
+            ).addTo(feature_group_aed0804e3da317dc293f729f05e96472);
+        
+    
+            var icon_4e030a35aab7a4e738ef64da998a71e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c2d442d0004d2bc520a39982d5d0a47f.bindTooltip(
+                `<div>
+                     End: Taxi 7831
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c2d442d0004d2bc520a39982d5d0a47f.setIcon(icon_4e030a35aab7a4e738ef64da998a71e6);
+            
+    
+            feature_group_aed0804e3da317dc293f729f05e96472.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_3a6c0d84891cd496aa5d189c55cf7c10 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_7e92b9ca6dc46e93a570ffef883924af = L.polyline(
+                [[40.07019, 116.56407], [40.06774, 116.58184], [40.0758, 116.5819]],
+                {"bubblingMouseEvents": true, "color": "magenta", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "magenta", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_3a6c0d84891cd496aa5d189c55cf7c10);
+        
+    
+            poly_line_7e92b9ca6dc46e93a570ffef883924af.bindTooltip(
+                `<div>
+                     Convoy 19 | Taxi 2161
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1fa66a01920dd7b68a086f233097d949 = L.circleMarker(
+                [40.07019, 116.56407],
+                {"bubblingMouseEvents": true, "color": "magenta", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3a6c0d84891cd496aa5d189c55cf7c10);
+        
+    
+            circle_marker_1fa66a01920dd7b68a086f233097d949.bindTooltip(
+                `<div>
+                     Start: Taxi 2161
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ca30fc96f3c696ffd92b6b5ff171aeb4 = L.marker(
+                [40.0758, 116.5819],
+                {
+}
+            ).addTo(feature_group_3a6c0d84891cd496aa5d189c55cf7c10);
+        
+    
+            var icon_0f31f67cbd1a00ae1a8dad103ca7b947 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "magenta",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ca30fc96f3c696ffd92b6b5ff171aeb4.bindTooltip(
+                `<div>
+                     End: Taxi 2161
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca30fc96f3c696ffd92b6b5ff171aeb4.setIcon(icon_0f31f67cbd1a00ae1a8dad103ca7b947);
+            
+    
+            var poly_line_2731ad027c1f6ba42cbb0effe8ae9ee9 = L.polyline(
+                [[40.07096, 116.56417], [40.06983, 116.58148], [40.07581, 116.58345]],
+                {"bubblingMouseEvents": true, "color": "magenta", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "magenta", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_3a6c0d84891cd496aa5d189c55cf7c10);
+        
+    
+            poly_line_2731ad027c1f6ba42cbb0effe8ae9ee9.bindTooltip(
+                `<div>
+                     Convoy 19 | Taxi 2763
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a850d39d1422d3c2b9d320b378f42a42 = L.circleMarker(
+                [40.07096, 116.56417],
+                {"bubblingMouseEvents": true, "color": "magenta", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3a6c0d84891cd496aa5d189c55cf7c10);
+        
+    
+            circle_marker_a850d39d1422d3c2b9d320b378f42a42.bindTooltip(
+                `<div>
+                     Start: Taxi 2763
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_10bac2287fed818a25c90bbe9aac98b3 = L.marker(
+                [40.07581, 116.58345],
+                {
+}
+            ).addTo(feature_group_3a6c0d84891cd496aa5d189c55cf7c10);
+        
+    
+            var icon_8c21fba45b7c7dfd21108a308bc482a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "magenta",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_10bac2287fed818a25c90bbe9aac98b3.bindTooltip(
+                `<div>
+                     End: Taxi 2763
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_10bac2287fed818a25c90bbe9aac98b3.setIcon(icon_8c21fba45b7c7dfd21108a308bc482a8);
+            
+    
+            var poly_line_60554b5f8d3a2eea0e9af6274e8a26f8 = L.polyline(
+                [[40.0711, 116.5642], [40.06838, 116.58171], [40.0747, 116.58278]],
+                {"bubblingMouseEvents": true, "color": "magenta", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "magenta", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_3a6c0d84891cd496aa5d189c55cf7c10);
+        
+    
+            poly_line_60554b5f8d3a2eea0e9af6274e8a26f8.bindTooltip(
+                `<div>
+                     Convoy 19 | Taxi 8341
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5cef7de8a98c5b80f61e62f13ae3afff = L.circleMarker(
+                [40.0711, 116.5642],
+                {"bubblingMouseEvents": true, "color": "magenta", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_3a6c0d84891cd496aa5d189c55cf7c10);
+        
+    
+            circle_marker_5cef7de8a98c5b80f61e62f13ae3afff.bindTooltip(
+                `<div>
+                     Start: Taxi 8341
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0bb093218c39a17924b1da5aac468241 = L.marker(
+                [40.0747, 116.58278],
+                {
+}
+            ).addTo(feature_group_3a6c0d84891cd496aa5d189c55cf7c10);
+        
+    
+            var icon_56836951dd049df147bb7aee40276142 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "magenta",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0bb093218c39a17924b1da5aac468241.bindTooltip(
+                `<div>
+                     End: Taxi 8341
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0bb093218c39a17924b1da5aac468241.setIcon(icon_56836951dd049df147bb7aee40276142);
+            
+    
+            feature_group_3a6c0d84891cd496aa5d189c55cf7c10.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_03983702aa7ef1af76c1593d7f40fccc = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_4ba29a9103c01cc7521cf64d2d102d8f = L.polyline(
+                [[39.95956, 116.30219], [39.94305, 116.3039], [39.93452, 116.30386]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_03983702aa7ef1af76c1593d7f40fccc);
+        
+    
+            poly_line_4ba29a9103c01cc7521cf64d2d102d8f.bindTooltip(
+                `<div>
+                     Convoy 20 | Taxi 6144
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6edacb4cb4565969e1e49ca1ee6873a9 = L.circleMarker(
+                [39.95956, 116.30219],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_03983702aa7ef1af76c1593d7f40fccc);
+        
+    
+            circle_marker_6edacb4cb4565969e1e49ca1ee6873a9.bindTooltip(
+                `<div>
+                     Start: Taxi 6144
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ad1e283d588740f036d78d020633d798 = L.marker(
+                [39.93452, 116.30386],
+                {
+}
+            ).addTo(feature_group_03983702aa7ef1af76c1593d7f40fccc);
+        
+    
+            var icon_919b4b0842cd5e099e79072f35c8b5a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ad1e283d588740f036d78d020633d798.bindTooltip(
+                `<div>
+                     End: Taxi 6144
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ad1e283d588740f036d78d020633d798.setIcon(icon_919b4b0842cd5e099e79072f35c8b5a2);
+            
+    
+            var poly_line_92020a1c4bb87063a5217523a235d436 = L.polyline(
+                [[39.9569, 116.30272], [39.94126, 116.3041], [39.93459, 116.30389]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_03983702aa7ef1af76c1593d7f40fccc);
+        
+    
+            poly_line_92020a1c4bb87063a5217523a235d436.bindTooltip(
+                `<div>
+                     Convoy 20 | Taxi 7825
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_31238424b1f3e79d54688a911e669e39 = L.circleMarker(
+                [39.9569, 116.30272],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_03983702aa7ef1af76c1593d7f40fccc);
+        
+    
+            circle_marker_31238424b1f3e79d54688a911e669e39.bindTooltip(
+                `<div>
+                     Start: Taxi 7825
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8125a8cbf1cf45b4e7f155a0cd04c02b = L.marker(
+                [39.93459, 116.30389],
+                {
+}
+            ).addTo(feature_group_03983702aa7ef1af76c1593d7f40fccc);
+        
+    
+            var icon_2ff345b7c5dd76554079d99c0393f785 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8125a8cbf1cf45b4e7f155a0cd04c02b.bindTooltip(
+                `<div>
+                     End: Taxi 7825
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8125a8cbf1cf45b4e7f155a0cd04c02b.setIcon(icon_2ff345b7c5dd76554079d99c0393f785);
+            
+    
+            var poly_line_a194bc6077c364c8afc080d9cc887b39 = L.polyline(
+                [[39.9596, 116.30191], [39.94234, 116.30362], [39.93343, 116.30391]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_03983702aa7ef1af76c1593d7f40fccc);
+        
+    
+            poly_line_a194bc6077c364c8afc080d9cc887b39.bindTooltip(
+                `<div>
+                     Convoy 20 | Taxi 7509
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_af9276b90be41fe67c5ae90437387d88 = L.circleMarker(
+                [39.9596, 116.30191],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_03983702aa7ef1af76c1593d7f40fccc);
+        
+    
+            circle_marker_af9276b90be41fe67c5ae90437387d88.bindTooltip(
+                `<div>
+                     Start: Taxi 7509
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_65b66590635941ee99f034bda3306656 = L.marker(
+                [39.93343, 116.30391],
+                {
+}
+            ).addTo(feature_group_03983702aa7ef1af76c1593d7f40fccc);
+        
+    
+            var icon_ba5c5325c8ac9c3566653586b11b52d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_65b66590635941ee99f034bda3306656.bindTooltip(
+                `<div>
+                     End: Taxi 7509
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_65b66590635941ee99f034bda3306656.setIcon(icon_ba5c5325c8ac9c3566653586b11b52d3);
+            
+    
+            feature_group_03983702aa7ef1af76c1593d7f40fccc.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_e4cf7b41111829dbf9e99bbfa78a1138 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_75c8b724bd3840d5aef5f881043d30ca = L.polyline(
+                [[39.90704, 116.4577], [39.90771, 116.4553], [39.90709, 116.44649]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_e4cf7b41111829dbf9e99bbfa78a1138);
+        
+    
+            poly_line_75c8b724bd3840d5aef5f881043d30ca.bindTooltip(
+                `<div>
+                     Convoy 21 | Taxi 5629
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7e03d1e2c991585f4fca4a078ea7c506 = L.circleMarker(
+                [39.90704, 116.4577],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e4cf7b41111829dbf9e99bbfa78a1138);
+        
+    
+            circle_marker_7e03d1e2c991585f4fca4a078ea7c506.bindTooltip(
+                `<div>
+                     Start: Taxi 5629
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_42c6f07e109c316bbc4fce33fa324033 = L.marker(
+                [39.90709, 116.44649],
+                {
+}
+            ).addTo(feature_group_e4cf7b41111829dbf9e99bbfa78a1138);
+        
+    
+            var icon_1e5fa8666d6576dfb2adb7b773f600c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_42c6f07e109c316bbc4fce33fa324033.bindTooltip(
+                `<div>
+                     End: Taxi 5629
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_42c6f07e109c316bbc4fce33fa324033.setIcon(icon_1e5fa8666d6576dfb2adb7b773f600c4);
+            
+    
+            var poly_line_16744d2296979354f13f601b77b2a67c = L.polyline(
+                [[39.90713, 116.46069], [39.90699, 116.45667], [39.9073, 116.44847]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_e4cf7b41111829dbf9e99bbfa78a1138);
+        
+    
+            poly_line_16744d2296979354f13f601b77b2a67c.bindTooltip(
+                `<div>
+                     Convoy 21 | Taxi 957
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8ae8ba8235486cfcfd55c6cb195bdfab = L.circleMarker(
+                [39.90713, 116.46069],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e4cf7b41111829dbf9e99bbfa78a1138);
+        
+    
+            circle_marker_8ae8ba8235486cfcfd55c6cb195bdfab.bindTooltip(
+                `<div>
+                     Start: Taxi 957
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_103dabf5bd4353ef78d69ee955891752 = L.marker(
+                [39.9073, 116.44847],
+                {
+}
+            ).addTo(feature_group_e4cf7b41111829dbf9e99bbfa78a1138);
+        
+    
+            var icon_b88910a0f151832bbd55a13298a12e5b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_103dabf5bd4353ef78d69ee955891752.bindTooltip(
+                `<div>
+                     End: Taxi 957
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_103dabf5bd4353ef78d69ee955891752.setIcon(icon_b88910a0f151832bbd55a13298a12e5b);
+            
+    
+            var poly_line_b8a5222b8ac5f6ca121500239e202f04 = L.polyline(
+                [[39.90705, 116.45875], [39.90706, 116.45487], [39.90711, 116.44649]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_e4cf7b41111829dbf9e99bbfa78a1138);
+        
+    
+            poly_line_b8a5222b8ac5f6ca121500239e202f04.bindTooltip(
+                `<div>
+                     Convoy 21 | Taxi 743
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aeb1b6bb8318d63e616fb6974e7e810b = L.circleMarker(
+                [39.90705, 116.45875],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e4cf7b41111829dbf9e99bbfa78a1138);
+        
+    
+            circle_marker_aeb1b6bb8318d63e616fb6974e7e810b.bindTooltip(
+                `<div>
+                     Start: Taxi 743
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a1289e3c9cc71533d058321e81ed97af = L.marker(
+                [39.90711, 116.44649],
+                {
+}
+            ).addTo(feature_group_e4cf7b41111829dbf9e99bbfa78a1138);
+        
+    
+            var icon_dc4a47ea92000aefcb5a8ada0edb2890 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a1289e3c9cc71533d058321e81ed97af.bindTooltip(
+                `<div>
+                     End: Taxi 743
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a1289e3c9cc71533d058321e81ed97af.setIcon(icon_dc4a47ea92000aefcb5a8ada0edb2890);
+            
+    
+            feature_group_e4cf7b41111829dbf9e99bbfa78a1138.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var feature_group_dd0b91c74bf37334413dc7c9f9f3b720 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_f95ef7f3edbd068f6457e5bff335b869 = L.polyline(
+                [[40.07022, 116.5641], [40.07212, 116.58099], [40.07591, 116.58178]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_dd0b91c74bf37334413dc7c9f9f3b720);
+        
+    
+            poly_line_f95ef7f3edbd068f6457e5bff335b869.bindTooltip(
+                `<div>
+                     Convoy 22 | Taxi 10144
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f26d04b1f09214fa3c384ad3b8049c0 = L.circleMarker(
+                [40.07022, 116.5641],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_dd0b91c74bf37334413dc7c9f9f3b720);
+        
+    
+            circle_marker_7f26d04b1f09214fa3c384ad3b8049c0.bindTooltip(
+                `<div>
+                     Start: Taxi 10144
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ad39924fa68f58ddfb5409fdfb5d86fa = L.marker(
+                [40.07591, 116.58178],
+                {
+}
+            ).addTo(feature_group_dd0b91c74bf37334413dc7c9f9f3b720);
+        
+    
+            var icon_0c2a405f3c4665e72cc3df2c75b2f186 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ad39924fa68f58ddfb5409fdfb5d86fa.bindTooltip(
+                `<div>
+                     End: Taxi 10144
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ad39924fa68f58ddfb5409fdfb5d86fa.setIcon(icon_0c2a405f3c4665e72cc3df2c75b2f186);
+            
+    
+            var poly_line_3ed24c7eb1eff8690902c7e29b4bc659 = L.polyline(
+                [[40.07018, 116.56392], [40.07252, 116.58094], [40.07515, 116.58194]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_dd0b91c74bf37334413dc7c9f9f3b720);
+        
+    
+            poly_line_3ed24c7eb1eff8690902c7e29b4bc659.bindTooltip(
+                `<div>
+                     Convoy 22 | Taxi 2724
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_19680c378356d2d0700ac14d6c792d29 = L.circleMarker(
+                [40.07018, 116.56392],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_dd0b91c74bf37334413dc7c9f9f3b720);
+        
+    
+            circle_marker_19680c378356d2d0700ac14d6c792d29.bindTooltip(
+                `<div>
+                     Start: Taxi 2724
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cb49a8e7721495442ed748f92b35f6c8 = L.marker(
+                [40.07515, 116.58194],
+                {
+}
+            ).addTo(feature_group_dd0b91c74bf37334413dc7c9f9f3b720);
+        
+    
+            var icon_80c91af3fd0ec9f52a19dc7236008dc0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_cb49a8e7721495442ed748f92b35f6c8.bindTooltip(
+                `<div>
+                     End: Taxi 2724
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cb49a8e7721495442ed748f92b35f6c8.setIcon(icon_80c91af3fd0ec9f52a19dc7236008dc0);
+            
+    
+            var poly_line_795902b572a949740f5f3dd20c995bca = L.polyline(
+                [[40.0701, 116.56291], [40.07336, 116.58083], [40.07555, 116.58188]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(feature_group_dd0b91c74bf37334413dc7c9f9f3b720);
+        
+    
+            poly_line_795902b572a949740f5f3dd20c995bca.bindTooltip(
+                `<div>
+                     Convoy 22 | Taxi 9671
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b6884756954c2ec9b3ed0272472cdc10 = L.circleMarker(
+                [40.0701, 116.56291],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_dd0b91c74bf37334413dc7c9f9f3b720);
+        
+    
+            circle_marker_b6884756954c2ec9b3ed0272472cdc10.bindTooltip(
+                `<div>
+                     Start: Taxi 9671
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ca60602ed851d593f3358bbb9bc69f6c = L.marker(
+                [40.07555, 116.58188],
+                {
+}
+            ).addTo(feature_group_dd0b91c74bf37334413dc7c9f9f3b720);
+        
+    
+            var icon_255c3eb1c881c6789a1023b8f58158f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ca60602ed851d593f3358bbb9bc69f6c.bindTooltip(
+                `<div>
+                     End: Taxi 9671
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca60602ed851d593f3358bbb9bc69f6c.setIcon(icon_255c3eb1c881c6789a1023b8f58158f0);
+            
+    
+            feature_group_dd0b91c74bf37334413dc7c9f9f3b720.addTo(map_240462c6b4e4605639b83c9f10cc9073);
+        
+    
+            var layer_control_de9c5871fee1bb034f2273f214345aad_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_4955ed3960969622ce431a781907b84e,
+                },
+                overlays :  {
+                    "Convoy 1 (Size: 3 | Time: 13:40 - 14:00)" : feature_group_7d92180bc77267bca9d2f70d628e7177,
+                    "Convoy 2 (Size: 3 | Time: 13:40 - 14:00)" : feature_group_2b8c0e01e6f5bcf7e0ad17927d74c7b0,
+                    "Convoy 3 (Size: 5 | Time: 13:40 - 14:00)" : feature_group_535cdefc8e9ef5120598885ec5cb9643,
+                    "Convoy 4 (Size: 4 | Time: 14:10 - 14:30)" : feature_group_30000a46fff1fb8ff9e6cdeb2db8d46b,
+                    "Convoy 5 (Size: 4 | Time: 14:20 - 14:40)" : feature_group_02d5f7686d90f0f877c55bb2ce6aa9aa,
+                    "Convoy 6 (Size: 4 | Time: 14:30 - 14:50)" : feature_group_cd258f3d4a7c23c798ef33b576a2f4da,
+                    "Convoy 7 (Size: 4 | Time: 14:50 - 15:10)" : feature_group_e18e0078ee34b0869ff10331323d4894,
+                    "Convoy 8 (Size: 4 | Time: 14:50 - 15:20)" : feature_group_342517d5a6e5d43b73d6f4f875ff77af,
+                    "Convoy 9 (Size: 4 | Time: 14:50 - 15:20)" : feature_group_9ba5bfd81e81e6caacc4b27daa8e2e86,
+                    "Convoy 10 (Size: 3 | Time: 15:10 - 15:30)" : feature_group_74b985dfca6e2ffbccb631cddb82e777,
+                    "Convoy 11 (Size: 3 | Time: 15:50 - 16:10)" : feature_group_5d45bdce7627c0a23a092d42ce0a1059,
+                    "Convoy 12 (Size: 3 | Time: 16:00 - 16:20)" : feature_group_8ed9698fc2743c092a3cbccafa361108,
+                    "Convoy 13 (Size: 3 | Time: 16:00 - 16:20)" : feature_group_165fc650e6457626c543341d93c5afff,
+                    "Convoy 14 (Size: 5 | Time: 16:00 - 16:30)" : feature_group_b14ce1801eda4cedf026855e7be58fcf,
+                    "Convoy 15 (Size: 3 | Time: 16:10 - 16:30)" : feature_group_9e3cb39fa7001d3e7ca28e01af229518,
+                    "Convoy 16 (Size: 4 | Time: 16:30 - 16:50)" : feature_group_42e14639091da539446cd992678a25ff,
+                    "Convoy 17 (Size: 3 | Time: 16:50 - 17:10)" : feature_group_45728ad7d6bf24c117fd5be6b002a90a,
+                    "Convoy 18 (Size: 3 | Time: 17:00 - 17:20)" : feature_group_aed0804e3da317dc293f729f05e96472,
+                    "Convoy 19 (Size: 3 | Time: 17:20 - 17:40)" : feature_group_3a6c0d84891cd496aa5d189c55cf7c10,
+                    "Convoy 20 (Size: 3 | Time: 17:30 - 17:50)" : feature_group_03983702aa7ef1af76c1593d7f40fccc,
+                    "Convoy 21 (Size: 3 | Time: 17:30 - 17:50)" : feature_group_e4cf7b41111829dbf9e99bbfa78a1138,
+                    "Convoy 22 (Size: 3 | Time: 17:30 - 17:50)" : feature_group_dd0b91c74bf37334413dc7c9f9f3b720,
+                },
+            };
+            let layer_control_de9c5871fee1bb034f2273f214345aad = L.control.layers(
+                layer_control_de9c5871fee1bb034f2273f214345aad_layers.base_layers,
+                layer_control_de9c5871fee1bb034f2273f214345aad_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_240462c6b4e4605639b83c9f10cc9073);
+
+        
+</script>
+</html>
