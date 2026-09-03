@@ -4,7 +4,7 @@ import time
 from sklearn.cluster import DBSCAN
 import folium
 
-def visualize_traj(df, trajs=None, target_index=None, file="traj_map"):
+def visualize_traj(df, start_time, end_time,trajs=None, target_index=None, file="traj_map"):
     """
     Generates an interactive HTML map showing taxi trajectories.
     
@@ -63,6 +63,25 @@ def visualize_traj(df, trajs=None, target_index=None, file="traj_map"):
         
     # 3. Initialize Folium map
     m = folium.Map(location=[center_lat, center_lon], zoom_start=13, tiles='CartoDB positron')
+    
+    # Add floating HTML Title Card with Overall Window Start & End Times
+    fmt_start = pd.to_datetime(start_time).strftime('%Y-%m-%d %H:%M') if start_time else "N/A"
+    fmt_end = pd.to_datetime(end_time).strftime('%Y-%m-%d %H:%M') if end_time else "N/A"
+
+    title_html = f'''
+         <div style="position: fixed; 
+                     top: 10px; left: 50px; width: 340px; 
+                     background-color: white; border:2px solid #ccc; z-index:9999; 
+                     font-family: Arial, sans-serif; font-size:13px; font-weight: bold; 
+                     text-align: center; padding: 8px; border-radius: 6px;
+                     box-shadow: 2px 2px 6px rgba(0,0,0,0.2);">
+             Beijing Taxi Convoy Map<br>
+             <span style="font-size:11px; font-weight: normal; color: #444;">
+                 Analysis Window: <b>{fmt_start}</b> to <b>{fmt_end}</b>
+             </span>
+         </div>
+         '''
+    m.get_root().html.add_child(folium.Element(title_html))
     
     # Valid Folium icon colors
     colors = ['red', 'blue', 'green', 'purple', 'orange', 'darkred', 'cadetblue', 'darkgreen', 'pink', 'black']
@@ -133,9 +152,9 @@ if __name__ == "__main__":
     print("Loading data...")
     df_temp = pd.read_csv(file, header=0, parse_dates=['time'])
     
-    # Filter by 1-hour time window
+    # Filter by 5-hour time window
     start_time = pd.to_datetime("2008-02-02 13:00:00")
-    end_time = pd.to_datetime("2008-02-02 14:00:00")
+    end_time = pd.to_datetime("2008-02-02 18:00:00")
     
     df_temp = df_temp[(df_temp['time'] >= start_time) & (df_temp['time'] <= end_time)].copy()
     print(f"Total rows in time window: {len(df_temp)}")
@@ -148,4 +167,4 @@ if __name__ == "__main__":
     
     # Visualize 20 taxi trajectories directly
     if not df_20_taxi.empty:
-        visualize_traj(df_20_taxi, target_index=11, file="traj_taxi_index11")
+        visualize_traj(df_20_taxi, start_time, end_time, target_index=11, file="traj_taxi_paper_param")

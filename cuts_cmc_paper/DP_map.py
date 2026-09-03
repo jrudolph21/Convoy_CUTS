@@ -78,6 +78,26 @@ def visualize_comparison_traj(df_orig, df_dp, file="traj_map_comparison"):
     center_lon = df_orig['x'].mean()
 
     m = folium.Map(location=[center_lat, center_lon], zoom_start=13, tiles='CartoDB positron')
+    
+    # Add floating HTML Title Card with Overall Window Start & End Times
+    fmt_start = pd.to_datetime(start_time).strftime('%Y-%m-%d %H:%M') if start_time else "N/A"
+    fmt_end = pd.to_datetime(end_time).strftime('%Y-%m-%d %H:%M') if end_time else "N/A"
+
+    title_html = f'''
+            <div style="position: fixed; 
+                        top: 10px; left: 50px; width: 340px; 
+                        background-color: white; border:2px solid #ccc; z-index:9999; 
+                        font-family: Arial, sans-serif; font-size:13px; font-weight: bold; 
+                        text-align: center; padding: 8px; border-radius: 6px;
+                        box-shadow: 2px 2px 6px rgba(0,0,0,0.2);">
+                Beijing Taxi Convoy Map<br>
+                <span style="font-size:11px; font-weight: normal; color: #444;">
+                    Analysis Window: <b>{fmt_start}</b> to <b>{fmt_end}</b>
+                </span>
+            </div>
+            '''
+    m.get_root().html.add_child(folium.Element(title_html))
+        
     colors = ['red', 'blue', 'green', 'purple', 'orange', 'darkred', 'cadetblue', 'darkgreen', 'pink', 'black']
 
     # Master Layer Groups for toggling all original vs simplified at once
@@ -151,7 +171,7 @@ if __name__ == "__main__":
     
     # Filter 1-hour time window
     start_time = pd.to_datetime("2008-02-02 13:00:00")
-    end_time = pd.to_datetime("2008-02-02 14:00:00")
+    end_time = pd.to_datetime("2008-02-02 18:00:00")
     df_temp = df_temp[(df_temp['time'] >= start_time) & (df_temp['time'] <= end_time)].copy()
 
     # Grab first 50 taxis
@@ -159,11 +179,11 @@ if __name__ == "__main__":
     df_50_taxi = df_temp[df_temp['id'].isin(unique_ids)].copy()
 
     # Apply DP Algorithm
-    df_simplified = simplify_trajectories_dp(df_50_taxi, tolerance_meters=100)  # 100 meters tolerance
+    df_simplified = simplify_trajectories_dp(df_50_taxi, tolerance_meters=31.5)  # 31.5 meters tolerance
 
     print(f"Original total points: {len(df_50_taxi)}")
     print(f"Simplified total points: {len(df_simplified)}")
     print(f"Point reduction: {((len(df_50_taxi) - len(df_simplified)) / len(df_50_taxi)) * 100:.1f}%\n")
 
     # Visualize Both Sets
-    visualize_comparison_traj(df_50_taxi, df_simplified, file="traj_map_comparison_100m")
+    visualize_comparison_traj(df_50_taxi, df_simplified, file="traj_map_comparison_31.5m")
