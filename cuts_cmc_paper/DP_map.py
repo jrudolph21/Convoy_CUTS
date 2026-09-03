@@ -171,7 +171,7 @@ if __name__ == "__main__":
     
     # Filter 1-hour time window
     start_time = pd.to_datetime("2008-02-02 13:00:00")
-    end_time = pd.to_datetime("2008-02-02 18:00:00")
+    end_time = pd.to_datetime("2008-02-02 14:00:00")
     df_temp = df_temp[(df_temp['time'] >= start_time) & (df_temp['time'] <= end_time)].copy()
 
     # Grab first 50 taxis
@@ -186,4 +186,4 @@ if __name__ == "__main__":
     print(f"Point reduction: {((len(df_50_taxi) - len(df_simplified)) / len(df_50_taxi)) * 100:.1f}%\n")
 
     # Visualize Both Sets
-    visualize_comparison_traj(df_50_taxi, df_simplified, file="traj_map_comparison_31.5m")
+    visualize_comparison_traj(df_50_taxi, df_simplified, file="traj_map_comparison_1hr_31.5m")
