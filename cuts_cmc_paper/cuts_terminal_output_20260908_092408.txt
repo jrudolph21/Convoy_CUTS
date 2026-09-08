@@ -1,1 +1,70 @@
 Loading data...
+Total rows in time window: 159611
+Total unique taxis in window: 9212
+Running CuTS Algorithm...
+[CuTS] Simplifying 9,212 taxi trajectories...
+[CuTS] Original points:   159,611
+[CuTS] Simplified points: 153,816
+[CuTS] Reduction:         3.63%
+[CuTS] Douglas-Peucker time: 54.2293 seconds
+[CuTS] Partition 01/09 13:30–14:00: 7,176 taxis, 1 clusters, 1 active candidates
+       timing: build=0.0516s | dbscan=599.5464s | match=0.0000s | new=0.0001s | dedup=0.0002s
+[CuTS] Partition 02/09 14:00–14:30: 7,786 taxis, 4 clusters, 4 active candidates
+       timing: build=0.0719s | dbscan=1158.2943s | match=0.0005s | new=0.0000s | dedup=0.0003s
+[CuTS] Partition 03/09 14:30–15:00: 8,070 taxis, 1 clusters, 3 active candidates
+       timing: build=0.0518s | dbscan=1154.2312s | match=0.0004s | new=0.0000s | dedup=0.0003s
+[CuTS] Partition 04/09 15:00–15:30: 8,237 taxis, 1 clusters, 3 active candidates
+       timing: build=0.0472s | dbscan=1174.5262s | match=0.0005s | new=0.0000s | dedup=0.0003s
+[CuTS] Partition 05/09 15:30–16:00: 8,299 taxis, 1 clusters, 2 active candidates
+       timing: build=0.0453s | dbscan=1234.8980s | match=0.0005s | new=0.0000s | dedup=0.0003s
+[CuTS] Partition 06/09 16:00–16:30: 8,320 taxis, 5 clusters, 6 active candidates
+       timing: build=0.0513s | dbscan=1318.2499s | match=0.0005s | new=0.0000s | dedup=0.0003s
+[CuTS] Partition 07/09 16:30–17:00: 8,199 taxis, 2 clusters, 4 active candidates
+       timing: build=0.0537s | dbscan=1335.1685s | match=0.0004s | new=0.0000s | dedup=0.0003s
+[CuTS] Partition 08/09 17:00–17:30: 8,000 taxis, 2 clusters, 4 active candidates
+       timing: build=0.0391s | dbscan=1302.1638s | match=0.0004s | new=0.0000s | dedup=0.0003s
+[CuTS] Partition 09/09 17:30–18:00: 7,543 taxis, 1 clusters, 3 active candidates
+       timing: build=0.0365s | dbscan=878.2312s | match=0.0005s | new=0.0000s | dedup=0.0003s
+[CuTS] Filter candidates: 3
+[CuTS] Filter time: 10155.7678 seconds
+
+[CuTS] Detailed cuts_filter timing:
+       Timestamp setup                  0.0008s    0.00%
+       Douglas-Peucker                 54.2293s    0.53%
+       Simplification stats             0.2016s    0.00%
+       Boundary setup                   0.0000s    0.00%
+       Build partition segments         0.4484s    0.00%
+       TRAJ-DBSCAN                  10155.3097s   99.46%
+       Candidate matching               0.0038s    0.00%
+       Candidate creation               0.0001s    0.00%
+       State de-duplication             0.0026s    0.00%
+       Partition bookkeeping            0.0019s    0.00%
+       Finalize active                  0.0000s    0.00%
+       Candidate de-duplication         0.0011s    0.00%
+       Total cuts_filter()          10210.2004s  100.00%
+[Refine] Candidate 1/3: 3 taxis, 13:30–17:00
+[Refine] Candidate 2/3: 3 taxis, 14:00–17:30
+[Refine] Candidate 3/3: 5919 taxis, 13:30–18:00
+
+Total Convoys Discovered: 1
+Convoy 1: Objects [6526, 6939, 8513] | Time: 2008-02-02 13:40:00 to 2008-02-02 16:30:00
+Generating map for ALL convoys...
+✅ Interactive map saved successfully: 'all_convoys_map_beijing_cuts_3_18_40.html'
+
+
+======================================================
+                 TIMING RESULTS
+======================================================
+Stage                              Seconds     Percent
+------------------------------------------------------
+Load data                           1.2272       0.01%
+Window setup                        0.0303       0.00%
+Coordinate conversion               0.0015       0.00%
+Douglas-Peucker                    54.2293       0.53%
+CuTS filter                     10155.7678      99.21%
+Refinement                         24.6618       0.24%
+Save CSV                            0.0068       0.00%
+Visualization                       0.0207       0.00%
+------------------------------------------------------
+TOTAL PROGRAM TIME              10236.1521
+======================================================
