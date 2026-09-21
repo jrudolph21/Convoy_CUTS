@@ -1,12 +1,12 @@
 import pandas as pd
 import numpy as np
-import time as time
+import time
 from sklearn.cluster import DBSCAN
 import visualize_convoy_tdrive as viz
 
 total_obj = 3
-total_time = 3
-total_dist = 100
+total_time = 18
+total_dist = 40
 
 def discover_convoys_cmc(df, m, k, e_meters):
     """
@@ -105,36 +105,52 @@ def discover_convoys_cmc(df, m, k, e_meters):
 # Example Usage with T-Drive Data
 # ==========================================
 if __name__ == "__main__":
-    
+    script_start = time.perf_counter()
     file = 'tdrive_processed.csv'
     
-    # Load the WHOLE file (do not use nrows=10000)
+    # 1. Load Data
     print("Loading data...")
+    t0 = time.perf_counter()
     df_temp = pd.read_csv(file, header=0, parse_dates=['time'])
+    t1 = time.perf_counter()
+    print(f" -> Data loading time: {t1 - t0:.2f} seconds")
     
-    # --- NEW: FILTER BY A SPECIFIC TIME WINDOW ---
-    # For demonstration, we will focus on a single day window (Feb 2, 2008, 13:00:00 to 18:00:00) to reduce the dataset size.
+    # 2. Filter Data
+    t0 = time.perf_counter()
     start_time = pd.to_datetime("2008-02-02 13:00:00")
     end_time = pd.to_datetime("2008-02-02 18:00:00")
     
     df_temp = df_temp[(df_temp['time'] >= start_time) & (df_temp['time'] <= end_time)].copy()
+    t1 = time.perf_counter()
     print(f"Total rows in one day window: {len(df_temp)}")
     print(f"Total unique taxis in window: {df_temp['id'].nunique()}")
+    print(f" -> Data filtering time: {t1 - t0:.2f} seconds")
     
-    
-    # Run the CMC Algorithm
-    print("Running CMC Algorithm...")
-    time_start = time.time()
+    # 3. Run Algorithm
+    print("\nRunning CMC Algorithm...")
+    t0 = time.perf_counter()
     convoys = discover_convoys_cmc(df_temp, m=total_obj, k=total_time, e_meters=total_dist)
-    time_end = time.time()
-    print(f"Execution Time: {time_end - time_start:.2f} seconds")
+    t1 = time.perf_counter()
+    print(f" -> CMC Algorithm Execution Time: {t1 - t0:.2f} seconds")
+    
+    # 4. Save Output
+    t0 = time.perf_counter()
     df_convoys = pd.DataFrame(convoys)
     df_convoys.to_csv(f"discovered_convoys_{total_obj}_{total_time}_{total_dist}.csv", index=False)
-    
+    t1 = time.perf_counter()
+    print(f" -> CSV Export Time: {t1 - t0:.2f} seconds")
     
     print(f"\nTotal Convoys Discovered: {len(convoys)}")
-    for i, c in enumerate(convoys): # Print first 5 to avoid console spam
+    for i, c in enumerate(convoys):
         print(f"Convoy {i+1}: Objects {c['objects']} | Time: {c['start_time']} to {c['end_time']}")
         
+    # 5. Visualization
     if convoys:
-        viz.visualize_convoys(df_temp, convoys, file=f"all_convoys_map_beijing_{total_obj}_{total_time}_{total_dist}")  # Visualize all convoys
+        print("\nGenerating visualization...")
+        t0 = time.perf_counter()
+        viz.visualize_convoys(df_temp, convoys, file=f"all_convoys_map_beijing_{total_obj}_{total_time}_{total_dist}")
+        t1 = time.perf_counter()
+        print(f" -> Visualization Time: {t1 - t0:.2f} seconds")
+
+    script_end = time.perf_counter()
+    print(f"\nTotal Script Runtime: {script_end - script_start:.2f} seconds")
